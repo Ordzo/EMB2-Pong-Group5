@@ -1,15 +1,68 @@
-WARNING:sim:991 - The project IP instance 'divider' for IP 'Divider Generator
-   v3.0' was generated with a different version of the IP than is currently in
-   the IP Catalog. It was originally generated using IP with the packaged
-   timestamp '2012-10-13+03:35'; the IP in the current catalog has a different
-   packaged timestamp '2013-10-13+18:46'. This mismatch is due to changes made
-   to the IP in the user repositories. It may affect some functionality of the
-   IP, if there are differences between these two versions of the IP.
 INFO:sim:172 - Generating IP...
 Applying current project options...
 Finished applying current project options.
 Customizing IP...
 Release 14.7 - Xilinx CORE Generator IP GUI Launcher P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-Cancelled Customization.
+Finished Customizing.
+Generating IP...
+WARNING:sim:471 - The chosen IP does not support a VHDL behavioral model,
+   generating a VHDL structural model instead.
+WARNING:sim:89 - A core named <divider> already exists in the output directory.
+   Output products for this core may be overwritten.
+XST: HDL Parsing
+XST: HDL Elaboration
+XST: HDL Synthesis
+XST: Advanced HDL Synthesis
+XST: Low Level Synthesis
+XST: Partition Report
+XST: Design Summary
+Generating Implementation files.
+Generating NGC file.
+Generating VHDL structural model.
+Finished Generation.
+Generating IP instantiation template...
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'divider'...
+Generating metadata file...
+Generating ISE project...
+XCO file found: divider.xco
+XMDF file found: divider_xmdf.tcl
+Adding /home/gudmundur/FPGA
+Projects/Pong/GenericSlidingAverage/ipcore_dir/tmp/_cg/divider.asy -view all
+-origin_type imported
+Adding /home/gudmundur/FPGA
+Projects/Pong/GenericSlidingAverage/ipcore_dir/tmp/_cg/divider.ngc -view all
+-origin_type created
+Checking file "/home/gudmundur/FPGA
+Projects/Pong/GenericSlidingAverage/ipcore_dir/tmp/_cg/divider.ngc" for project
+device match ...
+File "/home/gudmundur/FPGA
+Projects/Pong/GenericSlidingAverage/ipcore_dir/tmp/_cg/divider.ngc" device
+information matches project device.
+Adding /home/gudmundur/FPGA
+Projects/Pong/GenericSlidingAverage/ipcore_dir/tmp/_cg/divider.sym -view all
+-origin_type imported
+Adding /home/gudmundur/FPGA
+Projects/Pong/GenericSlidingAverage/ipcore_dir/tmp/_cg/divider.vhd -view all
+-origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file "/home/gudmundur/FPGA
+   Projects/Pong/GenericSlidingAverage/ipcore_dir/tmp/_cg/divider.vhd" into
+   library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding /home/gudmundur/FPGA
+Projects/Pong/GenericSlidingAverage/ipcore_dir/tmp/_cg/divider.vho -view all
+-origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/divider"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
 Wrote CGP file for project 'divider'.

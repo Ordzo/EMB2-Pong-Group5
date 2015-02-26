@@ -1,15 +1,16 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/testbench_isim_beh.exe -prj /home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/testbench_beh.prj work.testbench 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/testbench_isim_beh.exe -prj /home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/testbench_beh.prj work.testbench 
 ISim P.20131013 (signature 0xfbc00daa)
-Number of CPUs detected in this system: 2
-Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/ipcore_dir/divider.vhd" into library work
-Parsing VHDL file "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/sliding_average.vhd" into library work
-Parsing VHDL file "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/testbench.vhd" into library work
+WARNING:Simulator:1010 - One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+Parsing VHDL file "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/ipcore_dir/divider.vhd" into library work
+Parsing VHDL file "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" into library work
+Parsing VHDL file "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 117712 KB
-Fuse CPU Usage: 1240 ms
+Fuse Memory Usage: 126552 KB
+Fuse CPU Usage: 1140 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -32,9 +33,8 @@ Compiling architecture structure of entity divider [divider_default]
 Compiling architecture behavioral of entity sliding_average [sliding_average_default]
 Compiling architecture behavior of entity testbench
 Time Resolution for simulation is 1ps.
-Waiting for 15 sub-compilation(s) to finish...
 Compiled 37 VHDL Units
-Built simulation executable /home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/testbench_isim_beh.exe
-Fuse Memory Usage: 441996 KB
-Fuse CPU Usage: 1650 ms
-GCC CPU Usage: 6690 ms
+Built simulation executable /home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/testbench_isim_beh.exe
+Fuse Memory Usage: 1233628 KB
+Fuse CPU Usage: 1440 ms
+GCC CPU Usage: 1390 ms

@@ -1,5 +1,5 @@
 The following files were generated for 'divider' in directory
-C:\Users\anlan\Documents\PhD\Undervisning\EMB3 - 2013\Lecture 3\Exercise\GenericSlidingAverage\ipcore_dir\
+/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/ipcore_dir/
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.
@@ -22,6 +22,11 @@ IP Symbol Generator:
    Generate an IP symbol based on the current project options'.
 
    * divider.asy
+
+SYM file generator:
+   Generate a SYM file for compatibility with legacy flows
+
+   * divider.sym
 
 Generate ISE metadata:
    Create a metadata file for use when including this core in ISE designs

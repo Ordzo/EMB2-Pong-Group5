@@ -50,10 +50,11 @@ architecture Behavioral of sliding_average is
 	-- signal declarations
 	----------------------------------------------------------------
 		signal slav_delay					: slav_array_type(0 to C_DATA_CNT-1) := (others=>(others=>'0'));
-		signal sum_sig 					: unsigned(13 downto 0 );
-		signal division_dividend		: unsigned(13 downto 0);
-		signal division_quotient		: unsigned(13 downto 0);
-		signal division_quotient_slv	: std_logic_vector(13 downto 0);
+		signal sum_sig 					: unsigned(15 downto 0 );
+		signal division_dividend		: unsigned(15 downto 0);
+		signal division_quotient		: unsigned(15 downto 0);
+		signal division_quotient_slv	: std_logic_vector(15 downto 0);
+		signal index_sig					: integer range 0 to (C_DATA_CNT - 1) := 0;
 	----------------------------------------------------------------
 	
 	----------------------------------------------------------------
@@ -63,10 +64,10 @@ architecture Behavioral of sliding_average is
 			port (
 			clk: in std_logic;
 			rfd: out std_logic;
-			dividend: in std_logic_vector(13 downto 0);
-			divisor: in std_logic_vector(3 downto 0);
-			quotient: out std_logic_vector(13 downto 0);
-			fractional: out std_logic_vector(3 downto 0));
+			dividend: in std_logic_vector(15 downto 0);
+			divisor: in std_logic_vector(4 downto 0);
+			quotient: out std_logic_vector(15 downto 0);
+			fractional: out std_logic_vector(4 downto 0));
 		end component;
 	----------------------------------------------------------------
 	
@@ -87,7 +88,7 @@ begin
 			clk 			=> clk_i,
 			rfd 			=> open,
 			dividend 	=> std_logic_vector(division_dividend),
-			divisor 		=> std_logic_vector(to_unsigned(C_DATA_CNT,4)),
+			divisor 		=> std_logic_vector(to_unsigned(C_DATA_CNT,5)),
 			quotient 	=> division_quotient_slv,
 			fractional 	=> open
 			);		
@@ -99,20 +100,34 @@ begin
 	-- Sliding Average logic
 	----------------------------------------------------------------
 		process(clk_i)
-			variable sum	: unsigned(13 downto 0) := (others => '0');
+			variable sum	: unsigned(15 downto 0) := (others => '0');
+			variable index : integer range 0 to (C_DATA_CNT - 1) := 0;
 		begin
 			if rising_edge(clk_i) then
 				if(reset_i = '1') then
 					sum_sig <= (others => '0');
+					index := 0;
+					index_sig <= index;
+					sum := (others => '0');
 				else
+					-- Circular buffer 
+--					sum := sum - slav_delay(index);
+--					slav_delay(index) <= unsigned(adc_i);
+--					sum := sum + unsigned(adc_i);
+--					index := index + 1;
+--					IF index = C_DATA_CNT THEN
+--						index := 0;
+--					END IF;
+--					index_sig <= index;
+--					
 					slav_delay(0) <= unsigned(adc_i);
-					sum := resize(slav_delay(0), 14);
+					sum := sum_sig + resize(unsigned(adc_i), 16);
+					sum := sum - resize(slav_delay(C_DATA_CNT - 1), 16);
 					
 					for i in 1 to C_DATA_CNT-1 loop				
 						slav_delay(i) <= slav_delay(i-1);
-						sum := sum + resize(slav_delay(i),14);
+--						sum := sum + resize(slav_delay(i),14);
 					end loop;
-					
 					sum_sig <= sum;
 															
 					dac_o <= std_logic_vector(resize(division_quotient, 10));
