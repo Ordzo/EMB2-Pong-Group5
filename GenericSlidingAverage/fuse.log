@@ -1,0 +1,40 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/testbench_isim_beh.exe -prj /home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/testbench_beh.prj work.testbench 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/ipcore_dir/divider.vhd" into library work
+Parsing VHDL file "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/sliding_average.vhd" into library work
+Parsing VHDL file "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 117712 KB
+Fuse CPU Usage: 1240 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture vcc_v of entity VCC [vcc_default]
+Compiling architecture gnd_v of entity GND [gnd_default]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture lut3_v of entity LUT3 [\LUT3("01101010")(0,7)\]
+Compiling architecture lut2_v of entity LUT2 [\LUT2("1001")(0,3)\]
+Compiling architecture lut1_v of entity LUT1 [\LUT1("0001")(0,3)\]
+Compiling architecture fd_v of entity FD [\FD('0')\]
+Compiling architecture mult_and_v of entity MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity XORCY [xorcy_default]
+Compiling architecture structure of entity divider [divider_default]
+Compiling architecture behavioral of entity sliding_average [sliding_average_default]
+Compiling architecture behavior of entity testbench
+Time Resolution for simulation is 1ps.
+Waiting for 15 sub-compilation(s) to finish...
+Compiled 37 VHDL Units
+Built simulation executable /home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/GenericSlidingAverage/testbench_isim_beh.exe
+Fuse Memory Usage: 441996 KB
+Fuse CPU Usage: 1650 ms
+GCC CPU Usage: 6690 ms

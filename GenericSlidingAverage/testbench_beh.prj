@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/divider.vhd"
+vhdl work "sliding_average.vhd"
+vhdl work "testbench.vhd"
