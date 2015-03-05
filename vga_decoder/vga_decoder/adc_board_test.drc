@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu Mar 05 15:27:04 2015
+
+drc -z ADC_board_test.ncd ADC_board_test.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/adc_handler_tb_isim_beh.exe" -prj "C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/adc_handler_tb_beh.prj" "work.adc_handler_tb" 
