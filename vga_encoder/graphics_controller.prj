@@ -1,0 +1,3 @@
+vhdl work "vga_generator.vhd"
+vhdl work "alive_led.vhd"
+vhdl work "graphics_controller.vhd"

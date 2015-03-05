@@ -1,0 +1,58 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Mar 05 12:48:43 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led_o" LOCATE = SITE "B6" LEVEL 1;
+COMP "j8_vga_green_o<0>" LOCATE = SITE "J17" LEVEL 1;
+COMP "j8_vga_green_o<1>" LOCATE = SITE "F20" LEVEL 1;
+COMP "j8_vga_green_o<2>" LOCATE = SITE "H19" LEVEL 1;
+COMP "j8_vga_red_o<0>" LOCATE = SITE "J19" LEVEL 1;
+COMP "j8_vga_red_o<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "j8_vga_red_o<2>" LOCATE = SITE "H20" LEVEL 1;
+COMP "clk_200M_i" LOCATE = SITE "A11" LEVEL 1;
+COMP "j8_vga_vsync_o" LOCATE = SITE "L19" LEVEL 1;
+COMP "j8_vga_hsync_o" LOCATE = SITE "K18" LEVEL 1;
+COMP "j8_vga_blue_o<0>" LOCATE = SITE "K20" LEVEL 1;
+COMP "j8_vga_blue_o<1>" LOCATE = SITE "G19" LEVEL 1;
+COMP "j8_vga_blue_o<2>" LOCATE = SITE "K19" LEVEL 1;
+TIMEGRP clk_200M_i = BEL "alive_led_inst/counter_0" BEL
+        "alive_led_inst/counter_1" BEL "alive_led_inst/counter_2" BEL
+        "alive_led_inst/counter_3" BEL "alive_led_inst/counter_4" BEL
+        "alive_led_inst/counter_5" BEL "alive_led_inst/counter_6" BEL
+        "alive_led_inst/counter_7" BEL "alive_led_inst/counter_8" BEL
+        "alive_led_inst/counter_9" BEL "alive_led_inst/counter_10" BEL
+        "alive_led_inst/counter_11" BEL "alive_led_inst/counter_12" BEL
+        "alive_led_inst/counter_13" BEL "alive_led_inst/counter_14" BEL
+        "alive_led_inst/counter_15" BEL "alive_led_inst/counter_16" BEL
+        "alive_led_inst/counter_17" BEL "alive_led_inst/counter_18" BEL
+        "alive_led_inst/counter_19" BEL "alive_led_inst/counter_20" BEL
+        "alive_led_inst/counter_21" BEL "alive_led_inst/counter_22" BEL
+        "alive_led_inst/counter_23" BEL "alive_led_inst/counter_24" BEL
+        "alive_led_inst/counter_25" BEL "alive_led_inst/counter_26" BEL
+        "vga_generator_inst/pixel_clk_cnt_0" BEL
+        "vga_generator_inst/pixel_clk_cnt_1" BEL
+        "vga_generator_inst/line_cnt_reg_0" BEL
+        "vga_generator_inst/line_cnt_reg_1" BEL
+        "vga_generator_inst/line_cnt_reg_2" BEL
+        "vga_generator_inst/line_cnt_reg_3" BEL
+        "vga_generator_inst/line_cnt_reg_4" BEL
+        "vga_generator_inst/line_cnt_reg_5" BEL
+        "vga_generator_inst/line_cnt_reg_6" BEL
+        "vga_generator_inst/line_cnt_reg_7" BEL
+        "vga_generator_inst/line_cnt_reg_8" BEL
+        "vga_generator_inst/line_cnt_reg_9" BEL
+        "vga_generator_inst/pixel_cnt_reg_0" BEL
+        "vga_generator_inst/pixel_cnt_reg_1" BEL
+        "vga_generator_inst/pixel_cnt_reg_2" BEL
+        "vga_generator_inst/pixel_cnt_reg_3" BEL
+        "vga_generator_inst/pixel_cnt_reg_4" BEL
+        "vga_generator_inst/pixel_cnt_reg_5" BEL
+        "vga_generator_inst/pixel_cnt_reg_6" BEL
+        "vga_generator_inst/pixel_cnt_reg_7" BEL
+        "vga_generator_inst/pixel_cnt_reg_8" BEL
+        "vga_generator_inst/pixel_cnt_reg_9" BEL "alive_led_inst/led_o" BEL
+        "clk_200M_i_BUFGP/BUFG";
+TS_clk_200M_i = PERIOD TIMEGRP "clk_200M_i" 200 MHz HIGH 50%;
+SCHEMATIC END;
+

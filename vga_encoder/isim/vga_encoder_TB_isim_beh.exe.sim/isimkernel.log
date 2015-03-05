@@ -1,0 +1,28 @@
+Command line:
+   vga_encoder_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60606
+
+Tue Mar  3 13:01:38 2015
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 227.795 Meg
+
+ Total Signals          : 28
+ Total Nets             : 56
+ Total Signal Drivers   : 14
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 12
+ Total Traceable Variables  : 40
+ Total Scalar Nets and Variables : 566
+
+ Total Simulation Time: 7.3 sec
+
+ Current Memory Usage: 303.297 Meg
+
+Tue Mar  3 13:03:13 2015
+

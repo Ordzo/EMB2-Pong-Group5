@@ -1,0 +1,3 @@
+vhdl work "vga_generator.vhd"
+vhdl work "graphics_controller.vhd"
+vhdl work "vga_encoder_TB.vhd"

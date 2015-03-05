@@ -1,0 +1,2 @@
+vhdl isim_temp "graphics_controller.vhd"
+vhdl isim_temp "graphics_controller_TB.vhd"

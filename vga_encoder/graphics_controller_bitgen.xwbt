@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder/graphics_controller.ncd
+OUTFILE=/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder/graphics_controller.bit
+FAMILY=Spartan6
+PART=xc6slx45-3fgg484
+WORKINGDIR=/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder
+LICENSE=ISE
+USER_INFO=210779069_174157381_210595800_760

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder/vga_encoder_TB_isim_beh.exe" -prj "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder/vga_encoder_TB_beh.prj" "work.vga_encoder_TB" 

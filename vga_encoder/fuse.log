@@ -1,0 +1,25 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder/vga_encoder_TB_isim_beh.exe -prj /home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder/vga_encoder_TB_beh.prj work.vga_encoder_TB 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder/vga_generator.vhd" into library work
+Parsing VHDL file "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder/graphics_controller.vhd" into library work
+Parsing VHDL file "/home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder/vga_encoder_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96732 KB
+Fuse CPU Usage: 1060 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity vga_generator [\vga_generator(3)\]
+Compiling architecture behavioral of entity graphics_controller [graphics_controller_default]
+Compiling architecture behavior of entity vga_encoder_tb
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 8 VHDL Units
+Built simulation executable /home/student/Dropbox/Robotteknologi - Universitetet/8. Semester/EMB3/vga_encoder/vga_encoder_TB_isim_beh.exe
+Fuse Memory Usage: 406244 KB
+Fuse CPU Usage: 1140 ms
+GCC CPU Usage: 1690 ms
