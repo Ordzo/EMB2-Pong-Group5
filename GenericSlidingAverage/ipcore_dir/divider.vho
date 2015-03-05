@@ -56,10 +56,10 @@ component divider
 	port (
 	clk: in std_logic;
 	rfd: out std_logic;
-	dividend: in std_logic_vector(15 downto 0);
-	divisor: in std_logic_vector(4 downto 0);
-	quotient: out std_logic_vector(15 downto 0);
-	fractional: out std_logic_vector(4 downto 0));
+	dividend: in std_logic_vector(13 downto 0);
+	divisor: in std_logic_vector(3 downto 0);
+	quotient: out std_logic_vector(13 downto 0);
+	fractional: out std_logic_vector(3 downto 0));
 end component;
 
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------

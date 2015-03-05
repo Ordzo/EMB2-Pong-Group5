@@ -123,8 +123,7 @@ Parsing architecture <Behavioral> of entity <sliding_average>.
 =========================================================================
 
 Elaborating entity <sliding_average> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:89 - "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" Line 63: <divider> remains a black-box since it has no binding entity.
-WARNING:HDLCompiler:1127 - "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" Line 102: Assignment to index_sig ignored, since the identifier is never used
+WARNING:HDLCompiler:89 - "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" Line 62: <divider> remains a black-box since it has no binding entity.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -132,8 +131,8 @@ WARNING:HDLCompiler:1127 - "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAve
 
 Synthesizing Unit <sliding_average>.
     Related source file is "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd".
-INFO:Xst:3210 - "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" line 86: Output port <fractional> of the instance <divider_inst> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" line 86: Output port <rfd> of the instance <divider_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" line 85: Output port <fractional> of the instance <divider_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" line 85: Output port <rfd> of the instance <divider_inst> is unconnected or connected to loadless signal.
     Found 10-bit register for signal <slav_delay<0>>.
     Found 10-bit register for signal <slav_delay<1>>.
     Found 10-bit register for signal <slav_delay<2>>.
@@ -146,12 +145,12 @@ INFO:Xst:3210 - "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/slidin
     Found 10-bit register for signal <slav_delay<9>>.
     Found 10-bit register for signal <slav_delay<10>>.
     Found 10-bit register for signal <dac_o>.
-    Found 16-bit register for signal <sum_sig>.
-    Found 16-bit subtractor for signal <_n0071> created at line 125.
-    Found 16-bit adder for signal <GND_4_o_GND_4_o_sub_3_OUT<15:0>> created at line 125.
+    Found 14-bit register for signal <sum_sig>.
+    Found 14-bit subtractor for signal <_n0071> created at line 110.
+    Found 14-bit adder for signal <GND_4_o_GND_4_o_sub_3_OUT<13:0>> created at line 110.
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred 136 D-type flip-flop(s).
+	inferred 134 D-type flip-flop(s).
 Unit <sliding_average> synthesized.
 
 =========================================================================
@@ -159,11 +158,11 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 16-bit adder                                          : 1
- 16-bit subtractor                                     : 1
+ 14-bit adder                                          : 1
+ 14-bit subtractor                                     : 1
 # Registers                                            : 13
  10-bit register                                       : 12
- 16-bit register                                       : 1
+ 14-bit register                                       : 1
 
 =========================================================================
 
@@ -183,9 +182,9 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 1
- 16-bit subtractor                                     : 1
+ 14-bit subtractor                                     : 1
 # Accumulators                                         : 1
- 16-bit up accumulator                                 : 1
+ 14-bit up accumulator                                 : 1
 # Registers                                            : 120
  Flip-Flops                                            : 120
 
@@ -200,30 +199,31 @@ Optimizing unit <sliding_average> ...
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block sliding_average, actual ratio is 1.
+Forward register balancing over carry chain Msub__n0071_cy<0>
 
 Final Macro Processing ...
 
 Processing Unit <sliding_average> :
-	Found 9-bit shift register for signal <slav_delay_10_0>.
-	Found 9-bit shift register for signal <slav_delay_10_1>.
-	Found 9-bit shift register for signal <slav_delay_10_2>.
-	Found 9-bit shift register for signal <slav_delay_10_3>.
-	Found 9-bit shift register for signal <slav_delay_10_4>.
-	Found 9-bit shift register for signal <slav_delay_10_5>.
-	Found 9-bit shift register for signal <slav_delay_10_6>.
-	Found 9-bit shift register for signal <slav_delay_10_7>.
-	Found 9-bit shift register for signal <slav_delay_10_8>.
-	Found 9-bit shift register for signal <slav_delay_10_9>.
+	Found 8-bit shift register for signal <slav_delay_9_0>.
+	Found 8-bit shift register for signal <slav_delay_9_1>.
+	Found 8-bit shift register for signal <slav_delay_9_2>.
+	Found 8-bit shift register for signal <slav_delay_9_3>.
+	Found 8-bit shift register for signal <slav_delay_9_4>.
+	Found 8-bit shift register for signal <slav_delay_9_5>.
+	Found 8-bit shift register for signal <slav_delay_9_6>.
+	Found 8-bit shift register for signal <slav_delay_9_7>.
+	Found 8-bit shift register for signal <slav_delay_9_8>.
+	Found 8-bit shift register for signal <slav_delay_9_9>.
 Unit <sliding_average> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 46
- Flip-Flops                                            : 46
+# Registers                                            : 56
+ Flip-Flops                                            : 56
 # Shift Registers                                      : 10
- 9-bit shift register                                  : 10
+ 8-bit shift register                                  : 10
 
 =========================================================================
 
@@ -246,20 +246,20 @@ Top Level Output File Name         : sliding_average.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 426
+# BELS                             : 334
 #      GND                         : 2
-#      INV                         : 35
+#      INV                         : 30
 #      LUT1                        : 1
-#      LUT2                        : 42
-#      LUT3                        : 80
-#      MULT_AND                    : 6
-#      MUXCY                       : 128
+#      LUT2                        : 38
+#      LUT3                        : 56
+#      MULT_AND                    : 5
+#      MUXCY                       : 99
 #      VCC                         : 2
-#      XORCY                       : 130
-# FlipFlops/Latches                : 532
-#      FD                          : 476
-#      FDE                         : 40
-#      FDR                         : 16
+#      XORCY                       : 101
+# FlipFlops/Latches                : 426
+#      FD                          : 360
+#      FDE                         : 52
+#      FDR                         : 14
 # Shift Registers                  : 10
 #      SRLC16E                     : 10
 # Clock Buffers                    : 1
@@ -275,17 +275,17 @@ Selected Device : 6slx45fgg484-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             512  out of  54576     0%  
- Number of Slice LUTs:                  168  out of  27288     0%  
-    Number used as Logic:               158  out of  27288     0%  
+ Number of Slice Registers:             406  out of  54576     0%  
+ Number of Slice LUTs:                  135  out of  27288     0%  
+    Number used as Logic:               125  out of  27288     0%  
     Number used as Memory:               10  out of   6408     0%  
        Number used as SRL:               10
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    553
-   Number with an unused Flip Flop:      41  out of    553     7%  
-   Number with an unused LUT:           385  out of    553    69%  
-   Number of fully used LUT-FF pairs:   127  out of    553    22%  
+ Number of LUT Flip Flop pairs used:    433
+   Number with an unused Flip Flop:      27  out of    433     6%  
+   Number with an unused LUT:           298  out of    433    68%  
+   Number of fully used LUT-FF pairs:   108  out of    433    24%  
    Number of unique control sets:         3
 
 IO Utilization: 
@@ -317,7 +317,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk_i                              | IBUF+BUFG              | 542   |
+clk_i                              | IBUF+BUFG              | 436   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -328,8 +328,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.205ns (Maximum Frequency: 312.027MHz)
-   Minimum input arrival time before clock: 4.324ns
+   Minimum period: 2.441ns (Maximum Frequency: 409.752MHz)
+   Minimum input arrival time before clock: 4.357ns
    Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: 4.409ns
 
@@ -339,49 +339,36 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_i'
-  Clock period: 3.205ns (frequency: 312.027MHz)
-  Total number of paths / destination ports: 3167 / 527
+  Clock period: 2.441ns (frequency: 409.752MHz)
+  Total number of paths / destination ports: 1821 / 422
 -------------------------------------------------------------------------
-Delay:               3.205ns (Levels of Logic = 19)
-  Source:            slav_delay_10_0 (FF)
-  Destination:       sum_sig_15 (FF)
+Delay:               2.441ns (Levels of Logic = 6)
+  Source:            divider_inst/blk00000003/blk000000a4 (FF)
+  Destination:       divider_inst/blk00000003/blk000000b5 (FF)
   Source Clock:      clk_i rising
   Destination Clock: clk_i rising
 
-  Data Path: slav_delay_10_0 to sum_sig_15
+  Data Path: divider_inst/blk00000003/blk000000a4 to divider_inst/blk00000003/blk000000b5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              1   0.447   0.580  slav_delay_10_0 (slav_delay_10_0)
-     LUT2:I1->O            1   0.205   0.000  Msub__n0071_lut<0> (Msub__n0071_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  Msub__n0071_cy<0> (Msub__n0071_cy<0>)
-     MUXCY:CI->O           1   0.019   0.000  Msub__n0071_cy<1> (Msub__n0071_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  Msub__n0071_cy<2> (Msub__n0071_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  Msub__n0071_cy<3> (Msub__n0071_cy<3>)
-     MUXCY:CI->O           1   0.019   0.000  Msub__n0071_cy<4> (Msub__n0071_cy<4>)
-     MUXCY:CI->O           1   0.019   0.000  Msub__n0071_cy<5> (Msub__n0071_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  Msub__n0071_cy<6> (Msub__n0071_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  Msub__n0071_cy<7> (Msub__n0071_cy<7>)
-     MUXCY:CI->O           1   0.019   0.000  Msub__n0071_cy<8> (Msub__n0071_cy<8>)
-     MUXCY:CI->O           1   0.019   0.000  Msub__n0071_cy<9> (Msub__n0071_cy<9>)
-     MUXCY:CI->O           0   0.019   0.000  Msub__n0071_cy<10> (Msub__n0071_cy<10>)
-     XORCY:CI->O           5   0.180   0.715  Msub__n0071_xor<11> (_n0071<11>)
-     LUT2:I1->O            1   0.205   0.000  Maccum_sum_sig_lut<11> (Maccum_sum_sig_lut<11>)
-     MUXCY:S->O            1   0.172   0.000  Maccum_sum_sig_cy<11> (Maccum_sum_sig_cy<11>)
-     MUXCY:CI->O           1   0.019   0.000  Maccum_sum_sig_cy<12> (Maccum_sum_sig_cy<12>)
-     MUXCY:CI->O           1   0.019   0.000  Maccum_sum_sig_cy<13> (Maccum_sum_sig_cy<13>)
-     MUXCY:CI->O           0   0.019   0.000  Maccum_sum_sig_cy<14> (Maccum_sum_sig_cy<14>)
-     XORCY:CI->O           1   0.180   0.000  Maccum_sum_sig_xor<15> (Result<15>)
-     FDR:D                     0.102          sum_sig_15
+     FD:C->Q               7   0.447   0.773  blk000000a4 (sig0000006b)
+     INV:I->O              1   0.206   0.579  blk00000250 (sig000000e6)
+     MUXCY:CI->O           1   0.019   0.000  blk000000af (sig000000e2)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ac (sig000000df)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ab (sig000000dc)
+     MUXCY:CI->O           1   0.019   0.000  blk000000aa (sig000000d9)
+     MUXCY:CI->O           1   0.258   0.000  blk000000ad (sig000000e5)
+     FD:D                      0.102          blk000000b5
     ----------------------------------------
-    Total                      3.205ns (1.910ns logic, 1.295ns route)
-                                       (59.6% logic, 40.4% route)
+    Total                      2.441ns (1.089ns logic, 1.352ns route)
+                                       (44.6% logic, 55.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_i'
-  Total number of paths / destination ports: 1481 / 92
+  Total number of paths / destination ports: 226 / 98
 -------------------------------------------------------------------------
-Offset:              4.324ns (Levels of Logic = 2)
+Offset:              4.357ns (Levels of Logic = 2)
   Source:            reset_i (PAD)
   Destination:       slav_delay_0_0 (FF)
   Destination Clock: clk_i rising
@@ -390,12 +377,12 @@ Offset:              4.324ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            17   1.222   1.027  reset_i_IBUF (reset_i_IBUF)
-     INV:I->O             50   0.206   1.547  reset_i_inv1_INV_0 (reset_i_inv)
+     IBUF:I->O            15   1.222   0.981  reset_i_IBUF (reset_i_IBUF)
+     INV:I->O             62   0.206   1.626  reset_i_inv1_INV_0 (reset_i_inv)
      FDE:CE                    0.322          slav_delay_0_0
     ----------------------------------------
-    Total                      4.324ns (1.750ns logic, 2.574ns route)
-                                       (40.5% logic, 59.5% route)
+    Total                      4.357ns (1.750ns logic, 2.607ns route)
+                                       (40.2% logic, 59.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_i'
@@ -444,21 +431,21 @@ Clock to Setup on destination clock clk_i
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_i          |    3.205|         |         |         |
+clk_i          |    2.441|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.24 secs
+Total CPU time to Xst completion: 5.89 secs
  
 --> 
 
 
-Total memory usage is 397640 kilobytes
+Total memory usage is 399056 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

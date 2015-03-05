@@ -5,16 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="89" delta="old" >"/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" Line 63: &lt;<arg fmt="%s" index="1">divider</arg>&gt; remains a black-box since it has no binding entity.
+<msg type="warning" file="HDLCompiler" num="89" delta="old" >"/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" Line 62: &lt;<arg fmt="%s" index="1">divider</arg>&gt; remains a black-box since it has no binding entity.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" Line 102: Assignment to <arg fmt="%s" index="1">index_sig</arg> ignored, since the identifier is never used
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd</arg>&quot; line <arg fmt="%s" index="2">85</arg>: Output port &lt;<arg fmt="%s" index="3">fractional</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">divider_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">fractional</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">divider_inst</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">divider_inst</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd</arg>&quot; line <arg fmt="%s" index="2">85</arg>: Output port &lt;<arg fmt="%s" index="3">rfd</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">divider_inst</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 </messages>
