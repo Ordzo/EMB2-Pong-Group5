@@ -1,0 +1,194 @@
+Release 14.4 par P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+HAL-9000::  Thu Mar 05 15:26:28 2015
+
+par -w -intstyle ise -ol high -mt off ADC_board_test_map.ncd ADC_board_test.ncd
+ADC_board_test.pcf 
+
+
+Constraints file: ADC_board_test.pcf.
+Loading device for application Rf_Device from file '6slx45.nph' in environment C:\Xilinx\14.4\ISE_DS\ISE\.
+   "ADC_board_test" is an NCD, version 3.2, device xc6slx45, package fgg484, speed -3
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.23 2012-12-04".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                     8 out of  54,576    1%
+    Number used as Flip Flops:                   8
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                         11 out of  27,288    1%
+    Number used as logic:                       11 out of  27,288    1%
+      Number using O6 output only:              10
+      Number using O5 output only:               0
+      Number using O5 and O6:                    1
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   6,408    0%
+
+Slice Logic Distribution:
+  Number of occupied Slices:                     3 out of   6,822    1%
+  Number of MUXCYs used:                         0 out of  13,644    0%
+  Number of LUT Flip Flop pairs used:           11
+    Number with an unused Flip Flop:             4 out of      11   36%
+    Number with an unused LUT:                   0 out of      11    0%
+    Number of fully used LUT-FF pairs:           7 out of      11   63%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  54,576    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        21 out of     316    6%
+    Number of LOCed IOBs:                       21 out of      21  100%
+    IOB Flip Flops:                              5
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of     116    0%
+  Number of RAMB8BWERs:                          0 out of     232    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       8    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     376    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     376    0%
+  Number of OLOGIC2/OSERDES2s:                   5 out of     376    1%
+    Number used as OLOGIC2s:                     5
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     256    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      58    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       4    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 8 secs 
+Finished initial Timing Analysis.  REAL time: 8 secs 
+
+WARNING:Par:288 - The signal fx2_vga_red_i<0>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fx2_vga_red_i<1>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fx2_vga_red_i<2>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fx2_vga_red_i<3>_IBUF has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal fx2_vga_red_i<4>_IBUF has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 78 unrouted;      REAL time: 9 secs 
+
+Phase  2  : 67 unrouted;      REAL time: 11 secs 
+
+Phase  3  : 23 unrouted;      REAL time: 11 secs 
+
+Phase  4  : 23 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Updating file: ADC_board_test.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+Total REAL time to Router completion: 14 secs 
+Total CPU time to Router completion: 13 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|    clk_200M_i_BUFGP |  BUFGMUX_X3Y5| No   |    3 |  0.000     |  1.235      |
++---------------------+--------------+------+------+------------+-------------+
+|     RED_ADC/adc_clk |         Local|      |    7 |  1.489     |  4.579      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_clk_200M_i = PERIOD TIMEGRP "clk_200M_ | SETUP       |     2.768ns|     2.232ns|       0|           0
+  i" 200 MHz HIGH 50%                       | HOLD        |     0.447ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 5 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 16 secs 
+Total CPU time to PAR completion: 15 secs 
+
+Peak Memory Usage:  262 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 7
+Number of info messages: 0
+
+Writing design to file ADC_board_test.ncd
+
+
+
+PAR done!

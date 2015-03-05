@@ -1,0 +1,438 @@
+Release 14.4 - xst P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Reading design: ADC_board_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ADC_board_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ADC_board_test"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-fgg484
+
+---- Source Options
+Top Module Name                    : ADC_board_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Xpro_v14\8_semester\vga_decoder\vga_decoder\ADC_AD9215_handler.vhd" into library work
+Parsing entity <ADC_AD9215_handler>.
+Parsing architecture <Behavioral> of entity <adc_ad9215_handler>.
+Parsing VHDL file "C:\Xpro_v14\8_semester\vga_decoder\vga_decoder\ADC_board_test.vhd" into library work
+Parsing entity <ADC_board_test>.
+Parsing architecture <Behavioral> of entity <adc_board_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ADC_board_test> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ADC_AD9215_handler> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ADC_board_test>.
+    Related source file is "C:\Xpro_v14\8_semester\vga_decoder\vga_decoder\ADC_board_test.vhd".
+    Summary:
+	no macro.
+Unit <ADC_board_test> synthesized.
+
+Synthesizing Unit <ADC_AD9215_handler>.
+    Related source file is "C:\Xpro_v14\8_semester\vga_decoder\vga_decoder\ADC_AD9215_handler.vhd".
+        Input_clk_freq_MHZ = 200
+    Found 1-bit register for signal <adc_clk>.
+    Found 10-bit register for signal <adc_value_o>.
+    Found 7-bit register for signal <adc_clock_generator.clk_count>.
+    Found 7-bit adder for signal <adc_clock_generator.clk_count[6]_GND_5_o_add_1_OUT> created at line 73.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+Unit <ADC_AD9215_handler> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 10-bit register                                       : 1
+ 7-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <adc_value_o_0> of sequential type is unconnected in block <RED_ADC>.
+WARNING:Xst:2677 - Node <adc_value_o_1> of sequential type is unconnected in block <RED_ADC>.
+WARNING:Xst:2677 - Node <adc_value_o_2> of sequential type is unconnected in block <RED_ADC>.
+WARNING:Xst:2677 - Node <adc_value_o_3> of sequential type is unconnected in block <RED_ADC>.
+WARNING:Xst:2677 - Node <adc_value_o_4> of sequential type is unconnected in block <RED_ADC>.
+
+Synthesizing (advanced) Unit <ADC_AD9215_handler>.
+The following registers are absorbed into counter <adc_clock_generator.clk_count>: 1 register on signal <adc_clock_generator.clk_count>.
+Unit <ADC_AD9215_handler> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ADC_board_test> ...
+
+Optimizing unit <ADC_AD9215_handler> ...
+WARNING:Xst:2677 - Node <RED_ADC/adc_value_o_4> of sequential type is unconnected in block <ADC_board_test>.
+WARNING:Xst:2677 - Node <RED_ADC/adc_value_o_3> of sequential type is unconnected in block <ADC_board_test>.
+WARNING:Xst:2677 - Node <RED_ADC/adc_value_o_2> of sequential type is unconnected in block <ADC_board_test>.
+WARNING:Xst:2677 - Node <RED_ADC/adc_value_o_1> of sequential type is unconnected in block <ADC_board_test>.
+WARNING:Xst:2677 - Node <RED_ADC/adc_value_o_0> of sequential type is unconnected in block <ADC_board_test>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ADC_board_test, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ADC_board_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 14
+#      LUT2                        : 2
+#      LUT3                        : 1
+#      LUT4                        : 1
+#      LUT5                        : 2
+#      LUT6                        : 6
+#      MUXF7                       : 2
+# FlipFlops/Latches                : 13
+#      FD                          : 13
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 7
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45fgg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               8  out of  54576     0%  
+ Number of Slice LUTs:                   12  out of  27288     0%  
+    Number used as Logic:                12  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     12
+   Number with an unused Flip Flop:       4  out of     12    33%  
+   Number with an unused LUT:             0  out of     12     0%  
+   Number of fully used LUT-FF pairs:     8  out of     12    66%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                  16  out of    316     5%  
+    IOB Flip Flops/Latches:               5
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)      | Load  |
+-----------------------------------+----------------------------+-------+
+RED_ADC/adc_clk                    | NONE(RED_ADC/adc_value_o_9)| 5     |
+clk_200M_i                         | BUFGP                      | 8     |
+-----------------------------------+----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.646ns (Maximum Frequency: 377.986MHz)
+   Minimum input arrival time before clock: 1.903ns
+   Maximum output required time after clock: 3.791ns
+   Maximum combinational path delay: 4.372ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_200M_i'
+  Clock period: 2.646ns (frequency: 377.986MHz)
+  Total number of paths / destination ports: 58 / 8
+-------------------------------------------------------------------------
+Delay:               2.646ns (Levels of Logic = 2)
+  Source:            RED_ADC/adc_clock_generator.clk_count_4 (FF)
+  Destination:       RED_ADC/adc_clk (FF)
+  Source Clock:      clk_200M_i rising
+  Destination Clock: clk_200M_i rising
+
+  Data Path: RED_ADC/adc_clock_generator.clk_count_4 to RED_ADC/adc_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.447   1.109  RED_ADC/adc_clock_generator.clk_count_4 (RED_ADC/adc_clock_generator.clk_count_4)
+     LUT6:I0->O            1   0.203   0.580  RED_ADC/PWR_5_o_adc_clock_generator.clk_count[6]_equal_1_o<6>_rstpot (RED_ADC/PWR_5_o_adc_clock_generator.clk_count[6]_equal_1_o<6>_rstpot)
+     LUT3:I2->O            1   0.205   0.000  RED_ADC/adc_clk_rstpot (RED_ADC/adc_clk_rstpot)
+     FD:D                      0.102          RED_ADC/adc_clk
+    ----------------------------------------
+    Total                      2.646ns (0.957ns logic, 1.689ns route)
+                                       (36.2% logic, 63.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RED_ADC/adc_clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            fx2_vga_red_i<9> (PAD)
+  Destination:       RED_ADC/adc_value_o_9 (FF)
+  Destination Clock: RED_ADC/adc_clk rising
+
+  Data Path: fx2_vga_red_i<9> to RED_ADC/adc_value_o_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  fx2_vga_red_i_9_IBUF (fx2_vga_red_i_9_IBUF)
+     FD:D                      0.102          RED_ADC/adc_value_o_9
+    ----------------------------------------
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RED_ADC/adc_clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            RED_ADC/adc_value_o_9 (FF)
+  Destination:       led_o<2> (PAD)
+  Source Clock:      RED_ADC/adc_clk rising
+
+  Data Path: RED_ADC/adc_value_o_9 to led_o<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  RED_ADC/adc_value_o_9 (RED_ADC/adc_value_o_9)
+     OBUF:I->O                 2.571          led_o_2_OBUF (led_o<2>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_200M_i'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.791ns (Levels of Logic = 1)
+  Source:            RED_ADC/adc_clk (FF)
+  Destination:       fx2_vga_red_clk_o (PAD)
+  Source Clock:      clk_200M_i rising
+
+  Data Path: RED_ADC/adc_clk to fx2_vga_red_clk_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   0.773  RED_ADC/adc_clk (RED_ADC/adc_clk)
+     OBUF:I->O                 2.571          fx2_vga_red_clk_o_OBUF (fx2_vga_red_clk_o)
+    ----------------------------------------
+    Total                      3.791ns (3.018ns logic, 0.773ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               4.372ns (Levels of Logic = 2)
+  Source:            fx2_vga_hsync_i (PAD)
+  Destination:       led_o<0> (PAD)
+
+  Data Path: fx2_vga_hsync_i to led_o<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  fx2_vga_hsync_i_IBUF (led_o_0_OBUF)
+     OBUF:I->O                 2.571          led_o_0_OBUF (led_o<0>)
+    ----------------------------------------
+    Total                      4.372ns (3.793ns logic, 0.579ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_200M_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_200M_i     |    2.646|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.49 secs
+ 
+--> 
+
+Total memory usage is 191960 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

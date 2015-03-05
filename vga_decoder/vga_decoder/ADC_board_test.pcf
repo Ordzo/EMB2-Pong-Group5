@@ -1,0 +1,36 @@
+//! **************************************************************************
+// Written by: Map P.49d on Thu Mar 05 15:26:23 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "fx2_vga_vsync_i" LOCATE = SITE "AA6" LEVEL 1;
+COMP "fx2_vga_hsync_i" LOCATE = SITE "W3" LEVEL 1;
+COMP "fx2_vga_red_clk_o" LOCATE = SITE "W20" LEVEL 1;
+COMP "led_o<0>" LOCATE = SITE "B6" LEVEL 1;
+COMP "led_o<1>" LOCATE = SITE "A5" LEVEL 1;
+COMP "led_o<2>" LOCATE = SITE "A8" LEVEL 1;
+COMP "led_o<3>" LOCATE = SITE "B8" LEVEL 1;
+COMP "led_o<4>" LOCATE = SITE "C7" LEVEL 1;
+COMP "led_o<5>" LOCATE = SITE "A4" LEVEL 1;
+COMP "led_o<6>" LOCATE = SITE "D7" LEVEL 1;
+COMP "clk_200M_i" LOCATE = SITE "A11" LEVEL 1;
+COMP "fx2_vga_red_i<0>" LOCATE = SITE "V21" LEVEL 1;
+COMP "fx2_vga_red_i<1>" LOCATE = SITE "W22" LEVEL 1;
+COMP "fx2_vga_red_i<2>" LOCATE = SITE "U20" LEVEL 1;
+COMP "fx2_vga_red_i<3>" LOCATE = SITE "V22" LEVEL 1;
+COMP "fx2_vga_red_i<4>" LOCATE = SITE "T21" LEVEL 1;
+COMP "fx2_vga_red_i<5>" LOCATE = SITE "U22" LEVEL 1;
+COMP "fx2_vga_red_i<6>" LOCATE = SITE "R20" LEVEL 1;
+COMP "fx2_vga_red_i<7>" LOCATE = SITE "T22" LEVEL 1;
+COMP "fx2_vga_red_i<8>" LOCATE = SITE "P21" LEVEL 1;
+COMP "fx2_vga_red_i<9>" LOCATE = SITE "R22" LEVEL 1;
+TIMEGRP clk_200M_i = BEL "RED_ADC/adc_clock_generator.clk_count_4" BEL
+        "RED_ADC/adc_clock_generator.clk_count_3" BEL
+        "RED_ADC/adc_clock_generator.clk_count_2" BEL
+        "RED_ADC/adc_clock_generator.clk_count_1" BEL
+        "RED_ADC/adc_clock_generator.clk_count_0" BEL "RED_ADC/adc_clk" BEL
+        "RED_ADC/adc_clock_generator.clk_count_5" BEL
+        "RED_ADC/adc_clock_generator.clk_count_6" BEL "clk_200M_i_BUFGP/BUFG";
+TS_clk_200M_i = PERIOD TIMEGRP "clk_200M_i" 200 MHz HIGH 50%;
+SCHEMATIC END;
+
