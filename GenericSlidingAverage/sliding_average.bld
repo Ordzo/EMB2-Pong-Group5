@@ -17,7 +17,7 @@ Done...
 
 Checking expanded design ...
 WARNING:NgdBuild:483 - Attribute "INIT" on
-   "divider_inst/blk00000003/sig000000d8" is on the wrong type of object. 
+   "divider_inst/blk00000003/sig000000b7" is on the wrong type of object. 
    Please see the Constraints Guide for more information on this attribute.
 
 Partition Implementation Status
@@ -31,7 +31,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   1
 
-Total memory usage is 410004 kilobytes
+Total memory usage is 410992 kilobytes
 
 Writing NGD file "sliding_average.ngd" ...
 Total REAL time to NGDBUILD completion:  2 sec

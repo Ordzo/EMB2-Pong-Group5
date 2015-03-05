@@ -8,9 +8,10 @@ Parsing VHDL file "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/ipco
 Parsing VHDL file "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" into library work
 Parsing VHDL file "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/testbench.vhd" into library work
 Starting static elaboration
+WARNING:HDLCompiler:1316 - "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.vhd" Line 111: Index value <11> is out of range [0:10] of array <slav_delay>
 Completed static elaboration
-Fuse Memory Usage: 126552 KB
-Fuse CPU Usage: 1140 ms
+Fuse Memory Usage: 121892 KB
+Fuse CPU Usage: 1180 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -33,8 +34,9 @@ Compiling architecture structure of entity divider [divider_default]
 Compiling architecture behavioral of entity sliding_average [sliding_average_default]
 Compiling architecture behavior of entity testbench
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 37 VHDL Units
 Built simulation executable /home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/testbench_isim_beh.exe
-Fuse Memory Usage: 1233628 KB
-Fuse CPU Usage: 1440 ms
-GCC CPU Usage: 1390 ms
+Fuse Memory Usage: 1232608 KB
+Fuse CPU Usage: 1480 ms
+GCC CPU Usage: 1360 ms

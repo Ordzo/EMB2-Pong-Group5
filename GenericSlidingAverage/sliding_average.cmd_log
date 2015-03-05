@@ -34,3 +34,10 @@ ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx45-fgg4
 map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o sliding_average_map.ncd sliding_average.ngd sliding_average.pcf 
 par -w -intstyle ise -ol high -xe n -mt off sliding_average_map.ncd sliding_average.ncd sliding_average.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sliding_average.twx sliding_average.ncd -o sliding_average.twr sliding_average.pcf 
+xst -intstyle ise -ifn "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.xst" -ofn "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx45-fgg484-3 "sliding_average.ngc" sliding_average.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr b -lc off -power off -o sliding_average_map.ncd sliding_average.ngd sliding_average.pcf 
+xst -intstyle ise -ifn "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.xst" -ofn "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.syr" 
+xst -intstyle ise -ifn "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.xst" -ofn "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx45-fgg484-3 "sliding_average.ngc" sliding_average.ngd  
+xst -intstyle ise -ifn "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.xst" -ofn "/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/sliding_average.syr" 

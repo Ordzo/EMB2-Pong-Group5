@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="NgdBuild" num="483" delta="new" >Attribute &quot;<arg fmt="%s" index="1">INIT</arg>&quot; on &quot;<arg fmt="%s" index="2">divider_inst/blk00000003/sig000000d8</arg>&quot; is on the wrong type of object.  Please see the Constraints Guide for more information on this attribute.
+<msg type="warning" file="NgdBuild" num="483" delta="old" >Attribute &quot;<arg fmt="%s" index="1">INIT</arg>&quot; on &quot;<arg fmt="%s" index="2">divider_inst/blk00000003/sig000000b7</arg>&quot; is on the wrong type of object.  Please see the Constraints Guide for more information on this attribute.
 </msg>
 
 </messages>
