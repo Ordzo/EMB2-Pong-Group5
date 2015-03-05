@@ -1,0 +1,3 @@
+vhdl isim_temp "ipcore_dir/divider.vhd"
+vhdl isim_temp "sliding_average.vhd"
+vhdl isim_temp "testbench.vhd"
