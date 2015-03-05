@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-02-26T16:31:25</DateModified>
+  <DateModified>2015-03-03T08:58:44</DateModified>
   <ModuleName>sliding_average</ModuleName>
   <SummaryTimeStamp>2015-02-26T16:30:49</SummaryTimeStamp>
   <SavedFilePath>/home/gudmundur/FPGA Projects/Pong/GenericSlidingAverage/iseconfig/sliding_average.xreport</SavedFilePath>
