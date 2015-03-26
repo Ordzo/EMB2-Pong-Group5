@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Mar 19 12:55:59 2015
+# Process ID: 7669
+# Log file: /home/gudmundur/FPGA Projects/Pong/Bat_Finder/planAhead_run_1/planAhead.log
+# Journal file: /home/gudmundur/FPGA Projects/Pong/Bat_Finder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {/home/gudmundur/FPGA Projects/Pong/Bat_Finder/pa.fromHdl.tcl}
+# create_project -name Bat_Finder -dir "/home/gudmundur/FPGA Projects/Pong/Bat_Finder/planAhead_run_2" -part xc6slx45fgg484-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "graphics_controller.ucf" [current_fileset -constrset]
+Adding file '/home/gudmundur/FPGA Projects/Pong/Bat_Finder/graphics_controller.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Bat_Finder.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {graphics_controller.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top graphics_controller $srcset
+# add_files [list {graphics_controller.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx45fgg484-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/gudmundur/FPGA Projects/Pong/Bat_Finder/Bat_Finder.vhd" into library work
+Parsing VHDL file "/home/gudmundur/FPGA Projects/Pong/Bat_Finder/graphics_controller.vhd" into library work
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/fgg484/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/gudmundur/FPGA Projects/Pong/Bat_Finder/graphics_controller.ucf]
+Finished Parsing UCF File [/home/gudmundur/FPGA Projects/Pong/Bat_Finder/graphics_controller.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 0bd710f8
+open_rtl_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 2867.113 ; gain = 177.242
+update_compile_order -fileset sim_1
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See /home/gudmundur/FPGA Projects/Pong/Bat_Finder/planAhead_pid7669.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Mar 19 13:01:58 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

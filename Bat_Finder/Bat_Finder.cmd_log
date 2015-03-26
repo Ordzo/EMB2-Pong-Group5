@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/gudmundur/FPGA Projects/Pong/Bat_Finder/Bat_Finder.xst" -ofn "/home/gudmundur/FPGA Projects/Pong/Bat_Finder/Bat_Finder.syr" 

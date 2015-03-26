@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-03-03T08:58:35</DateModified>
+  <DateModified>2015-03-05T15:36:35</DateModified>
   <ModuleName>Bat_Finder</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-03-05T15:36:35</SummaryTimeStamp>
   <SavedFilePath>/home/gudmundur/FPGA Projects/Pong/Bat_Finder/iseconfig/Bat_Finder.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/gudmundur/FPGA Projects/Pong/Bat_Finder/</ImplementationReportsDirectory>
   <DateInitialized>2015-03-01T10:54:17</DateInitialized>

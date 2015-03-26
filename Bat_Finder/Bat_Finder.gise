@@ -21,8 +21,84 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Bat_Finder.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Bat_Finder.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Bat_Finder.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Bat_Finder.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Bat_Finder.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Bat_Finder.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Bat_Finder.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Bat_Finder.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Bat_Finder.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Bat_Finder_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Bat_Finder_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="graphics_controller.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="graphics_controller.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="graphics_controller.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="graphics_controller.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="graphics_controller.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="graphics_controller.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="graphics_controller_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="graphics_controller_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="graphics_controller_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1425564975" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1425564975">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1426675849" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5049472744590696939" xil_pn:start_ts="1426675849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1426675849" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-6956894304342937916" xil_pn:start_ts="1426675849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1425564976" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1425564975">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1426675849" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-6314318507052358057" xil_pn:start_ts="1426675849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1425564976" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015859450356" xil_pn:start_ts="1425564976">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1426675849" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2673296941280187634" xil_pn:start_ts="1426675849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1426675889" xil_pn:in_ck="-203880807343003390" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="880301638337962461" xil_pn:start_ts="1426675884">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Bat_Finder.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="graphics_controller.lso"/>
+      <outfile xil_pn:name="graphics_controller.prj"/>
+      <outfile xil_pn:name="graphics_controller.syr"/>
+      <outfile xil_pn:name="graphics_controller.xst"/>
+      <outfile xil_pn:name="graphics_controller_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1426675857" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3889335107187518804" xil_pn:start_ts="1426675857">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+    </transform>
+  </transforms>
 
 </generated_project>

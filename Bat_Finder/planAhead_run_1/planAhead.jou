@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Mar 19 12:55:59 2015
+# Process ID: 7669
+# Log file: /home/gudmundur/FPGA Projects/Pong/Bat_Finder/planAhead_run_1/planAhead.log
+# Journal file: /home/gudmundur/FPGA Projects/Pong/Bat_Finder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {/home/gudmundur/FPGA Projects/Pong/Bat_Finder/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
