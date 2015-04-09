@@ -1,7 +1,7 @@
 Release 14.4 - par P.49d (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Thu Mar 05 15:26:44 2015
+Tue Mar 24 17:14:47 2015
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -479,7 +479,7 @@ Pinout by Pin Number:
 |W17       |                 |IOBS     |IO_L11N_2                    |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |W18       |                 |IOBM     |IO_L6P_2                     |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |W19       |                 |         |GND                          |         |           |              |          |         |           |         |         |          |           |                |
-|W20       |fx2_vga_red_clk_o|IOB      |IO_L60P_1                    |OUTPUT   |LVTTL      |1             |6         |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|W20       |fx2_vga_red_clk_o|IOB      |IO_L60P_1                    |OUTPUT   |LVTTL      |1             |6         |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |W21       |                 |         |VCCO_1                       |         |           |1             |          |         |           |         |3.30     |          |           |                |
 |W22       |fx2_vga_red_i<1> |IOB      |IO_L60N_1                    |INPUT    |LVCMOS33   |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |Y1        |                 |IOBS     |IO_L1N_VREF_3                |UNUSED   |           |3             |          |         |           |         |         |          |           |                |

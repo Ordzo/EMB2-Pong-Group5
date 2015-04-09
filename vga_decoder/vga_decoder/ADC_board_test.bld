@@ -6,13 +6,21 @@ ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3
 ADC_board_test.ngc ADC_board_test.ngd
 
 Reading NGO file
-"C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/ADC_board_test.ngc" ...
+"C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.
+ngc" ...
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file "rmemb3_xc6slx45_master.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'clk_200M_i', used in period specification
+   'TS_clk_200M_i', was traced into DCM_CLKGEN instance DCM_CLKGEN_inst. The
+   following new TNM groups and period specifications were generated at the
+   DCM_CLKGEN output(s): 
+   CLKFX: <TIMESPEC TS_clk_100M7 = PERIOD "clk_100M7" TS_clk_200M_i *
+   0.503496503 HIGH 50%>
+
 Done...
 
 Checking expanded design ...
@@ -28,7 +36,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 114924 kilobytes
+Total memory usage is 114796 kilobytes
 
 Writing NGD file "ADC_board_test.ngd" ...
 Total REAL time to NGDBUILD completion:  4 sec

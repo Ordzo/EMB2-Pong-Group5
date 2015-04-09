@@ -5,37 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">adc_value_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RED_ADC</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">adc_value_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RED_ADC</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">adc_value_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RED_ADC</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">adc_value_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RED_ADC</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">adc_value_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RED_ADC</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">RED_ADC/adc_value_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADC_board_test</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">RED_ADC/adc_value_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADC_board_test</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">RED_ADC/adc_value_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADC_board_test</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">RED_ADC/adc_value_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADC_board_test</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">RED_ADC/adc_value_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ADC_board_test</arg>&gt;.
-</msg>
-
-<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\ADC_AD9215_handler.vhd" Line 78: Actual for formal port <arg fmt="%s" index="1">c1</arg> is neither a static name nor a globally static expression
 </msg>
 
 </messages>

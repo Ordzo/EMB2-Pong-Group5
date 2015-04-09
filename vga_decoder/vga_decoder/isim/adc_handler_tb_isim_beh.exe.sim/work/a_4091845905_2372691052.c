@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/adc_handler_tb.vhd";
+static const char *ng0 = "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/adc_handler_tb.vhd";
 
 
 
@@ -149,7 +149,7 @@ LAB9:    goto LAB8;
 LAB11:    goto LAB9;
 
 LAB12:    xsi_set_current_line(97, ng0);
-    t2 = (t0 + 4084);
+    t2 = (t0 + 4288);
     t6 = (t0 + 2168);
     t7 = (t6 + 32U);
     t8 = *((char **)t7);
@@ -170,7 +170,7 @@ LAB13:    goto LAB12;
 LAB15:    goto LAB13;
 
 LAB16:    xsi_set_current_line(99, ng0);
-    t2 = (t0 + 4094);
+    t2 = (t0 + 4298);
     t6 = (t0 + 2168);
     t7 = (t6 + 32U);
     t8 = *((char **)t7);

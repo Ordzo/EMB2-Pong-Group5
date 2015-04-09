@@ -111,29 +111,29 @@ NET "fx2_vga_red_i<8>"		LOC = "P21"	| IOSTANDARD = LVCMOS33; #FX2_A15 -> P21
 NET "fx2_vga_red_i<9>"		LOC = "R22"	| IOSTANDARD = LVCMOS33; #FX2_A16 -> R22
 #
 ##VGA GREEN -> B_VIN+ (ADC B)
-#NET "fx2_vga_green_clk_o"	LOC = "N20"	| IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6; #FX2_A17 -> N20
-#NET "fx2_vga_green_i<0>"	LOC = "P22"	| IOSTANDARD = LVCMOS33; #FX2_A18 -> P22
-#NET "fx2_vga_green_i<1>"	LOC = "M21"	| IOSTANDARD = LVCMOS33; #FX2_A19 -> M21
-#NET "fx2_vga_green_i<2>"	LOC = "N22"	| IOSTANDARD = LVCMOS33; #FX2_A20 -> N22
-#NET "fx2_vga_green_i<3>"	LOC = "M22"	| IOSTANDARD = LVCMOS33; #FX2_A21 -> M22
-#NET "fx2_vga_green_i<4>"	LOC = "L22"	| IOSTANDARD = LVCMOS33; #FX2_A22 -> L22
-#NET "fx2_vga_green_i<5>"	LOC = "K22"	| IOSTANDARD = LVCMOS33; #FX2_A23 -> K22
-#NET "fx2_vga_green_i<6>"	LOC = "L20"	| IOSTANDARD = LVCMOS33; #FX2_A24 -> L20
-#NET "fx2_vga_green_i<7>"	LOC = "J22"	| IOSTANDARD = LVCMOS33; #FX2_A25 -> J22
-#NET "fx2_vga_green_i<8>"	LOC = "K1"	| IOSTANDARD = LVCMOS33; #FX2_A26 -> K1
-#NET "fx2_vga_green_i<9>"	LOC = "L3"	| IOSTANDARD = LVCMOS33; #FX2_A27 -> L3
+NET "fx2_vga_green_clk_o"	LOC = "N20"	| IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6; #FX2_A17 -> N20
+NET "fx2_vga_green_i<0>"	LOC = "P22"	| IOSTANDARD = LVCMOS33; #FX2_A18 -> P22
+NET "fx2_vga_green_i<1>"	LOC = "M21"	| IOSTANDARD = LVCMOS33; #FX2_A19 -> M21
+NET "fx2_vga_green_i<2>"	LOC = "N22"	| IOSTANDARD = LVCMOS33; #FX2_A20 -> N22
+NET "fx2_vga_green_i<3>"	LOC = "M22"	| IOSTANDARD = LVCMOS33; #FX2_A21 -> M22
+NET "fx2_vga_green_i<4>"	LOC = "L22"	| IOSTANDARD = LVCMOS33; #FX2_A22 -> L22
+NET "fx2_vga_green_i<5>"	LOC = "K22"	| IOSTANDARD = LVCMOS33; #FX2_A23 -> K22
+NET "fx2_vga_green_i<6>"	LOC = "L20"	| IOSTANDARD = LVCMOS33; #FX2_A24 -> L20
+NET "fx2_vga_green_i<7>"	LOC = "J22"	| IOSTANDARD = LVCMOS33; #FX2_A25 -> J22
+NET "fx2_vga_green_i<8>"	LOC = "K1"	| IOSTANDARD = LVCMOS33; #FX2_A26 -> K1
+NET "fx2_vga_green_i<9>"	LOC = "L3"	| IOSTANDARD = LVCMOS33; #FX2_A27 -> L3
 #
 ##VGA BLUE -> C_VIN+ (ADC C)
-#NET "fx2_vga_blue_clk_o"	LOC = "L1"	| IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6; #FX2_A28 -> L1
-#NET "fx2_vga_blue_i<0>"		LOC = "M1"	| IOSTANDARD = LVCMOS33; #FX2_A29 -> M1
-#NET "fx2_vga_blue_i<1>"		LOC = "M2"	| IOSTANDARD = LVCMOS33; #FX2_A30 -> M2
-#NET "fx2_vga_blue_i<2>"		LOC = "N1"	| IOSTANDARD = LVCMOS33; #FX2_A31 -> N1
-#NET "fx2_vga_blue_i<3>"		LOC = "N3"	| IOSTANDARD = LVCMOS33; #FX2_A32 -> N3
-#NET "fx2_vga_blue_i<4>"		LOC = "P1"	| IOSTANDARD = LVCMOS33; #FX2_A33 -> P1
-#NET "fx2_vga_blue_i<5>"		LOC = "P2"	| IOSTANDARD = LVCMOS33; #FX2_A34 -> P2
-#NET "fx2_vga_blue_i<6>"		LOC = "R1"	| IOSTANDARD = LVCMOS33; #FX2_A35 -> R1
-#NET "fx2_vga_blue_i<7>"		LOC = "R3"	| IOSTANDARD = LVCMOS33; #FX2_A36 -> R3
-#NET "fx2_vga_blue_i<8>"		LOC = "T1"	| IOSTANDARD = LVCMOS33; #FX2_A37 -> T1
-#NET "fx2_vga_blue_i<9>"		LOC = "T2"	| IOSTANDARD = LVCMOS33; #FX2_A38 -> T2
+NET "fx2_vga_blue_clk_o"	LOC = "L1"	| IOSTANDARD = LVTTL | SLEW = SLOW | DRIVE = 6; #FX2_A28 -> L1
+NET "fx2_vga_blue_i<0>"		LOC = "M1"	| IOSTANDARD = LVCMOS33; #FX2_A29 -> M1
+NET "fx2_vga_blue_i<1>"		LOC = "M2"	| IOSTANDARD = LVCMOS33; #FX2_A30 -> M2
+NET "fx2_vga_blue_i<2>"		LOC = "N1"	| IOSTANDARD = LVCMOS33; #FX2_A31 -> N1
+NET "fx2_vga_blue_i<3>"		LOC = "N3"	| IOSTANDARD = LVCMOS33; #FX2_A32 -> N3
+NET "fx2_vga_blue_i<4>"		LOC = "P1"	| IOSTANDARD = LVCMOS33; #FX2_A33 -> P1
+NET "fx2_vga_blue_i<5>"		LOC = "P2"	| IOSTANDARD = LVCMOS33; #FX2_A34 -> P2
+NET "fx2_vga_blue_i<6>"		LOC = "R1"	| IOSTANDARD = LVCMOS33; #FX2_A35 -> R1
+NET "fx2_vga_blue_i<7>"		LOC = "R3"	| IOSTANDARD = LVCMOS33; #FX2_A36 -> R3
+NET "fx2_vga_blue_i<8>"		LOC = "T1"	| IOSTANDARD = LVCMOS33; #FX2_A37 -> T1
+NET "fx2_vga_blue_i<9>"		LOC = "T2"	| IOSTANDARD = LVCMOS33; #FX2_A38 -> T2
 
 ###################################################

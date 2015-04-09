@@ -6,3 +6,45 @@ map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off ADC_board_test_map.ncd ADC_board_test.ncd ADC_board_test.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ADC_board_test.twx ADC_board_test.ncd -o ADC_board_test.twr ADC_board_test.pcf -ucf rmemb3_xc6slx45_master.ucf 
 bitgen -intstyle ise -f ADC_board_test.ut ADC_board_test.ncd 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 ADC_board_test.ngc ADC_board_test.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADC_board_test_map.ncd ADC_board_test.ngd ADC_board_test.pcf 
+par -w -intstyle ise -ol high -mt off ADC_board_test_map.ncd ADC_board_test.ncd ADC_board_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ADC_board_test.twx ADC_board_test.ncd -o ADC_board_test.twr ADC_board_test.pcf -ucf rmemb3_xc6slx45_master.ucf 
+bitgen -intstyle ise -f ADC_board_test.ut ADC_board_test.ncd 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 ADC_board_test.ngc ADC_board_test.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADC_board_test_map.ncd ADC_board_test.ngd ADC_board_test.pcf 
+par -w -intstyle ise -ol high -mt off ADC_board_test_map.ncd ADC_board_test.ncd ADC_board_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ADC_board_test.twx ADC_board_test.ncd -o ADC_board_test.twr ADC_board_test.pcf -ucf rmemb3_xc6slx45_master.ucf 
+bitgen -intstyle ise -f ADC_board_test.ut ADC_board_test.ncd 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 ADC_board_test.ngc ADC_board_test.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADC_board_test_map.ncd ADC_board_test.ngd ADC_board_test.pcf 
+par -w -intstyle ise -ol high -mt off ADC_board_test_map.ncd ADC_board_test.ncd ADC_board_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ADC_board_test.twx ADC_board_test.ncd -o ADC_board_test.twr ADC_board_test.pcf -ucf rmemb3_xc6slx45_master.ucf 
+bitgen -intstyle ise -f ADC_board_test.ut ADC_board_test.ncd 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 ADC_board_test.ngc ADC_board_test.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADC_board_test_map.ncd ADC_board_test.ngd ADC_board_test.pcf 
+par -w -intstyle ise -ol high -mt off ADC_board_test_map.ncd ADC_board_test.ncd ADC_board_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ADC_board_test.twx ADC_board_test.ncd -o ADC_board_test.twr ADC_board_test.pcf -ucf rmemb3_xc6slx45_master.ucf 
+bitgen -intstyle ise -f ADC_board_test.ut ADC_board_test.ncd 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 ADC_board_test.ngc ADC_board_test.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADC_board_test_map.ncd ADC_board_test.ngd ADC_board_test.pcf 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_board_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rmemb3_xc6slx45_master.ucf -p xc6slx45-fgg484-3 ADC_board_test.ngc ADC_board_test.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADC_board_test_map.ncd ADC_board_test.ngd ADC_board_test.pcf 
+par -w -intstyle ise -ol high -mt off ADC_board_test_map.ncd ADC_board_test.ncd ADC_board_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ADC_board_test.twx ADC_board_test.ncd -o ADC_board_test.twr ADC_board_test.pcf -ucf rmemb3_xc6slx45_master.ucf 
+bitgen -intstyle ise -f ADC_board_test.ut ADC_board_test.ncd 

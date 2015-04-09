@@ -1,0 +1,3 @@
+vhdl work "ADC_AD9215_handler.vhd"
+vhdl work "vga_decoder.vhd"
+vhdl work "vga_decoder_test.vhd"

@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/vga_decoder_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/vga_decoder_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/vga_decoder_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/vga_decoder_test.syr" 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/vga_decoder_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/vga_decoder_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-fgg484-3 vga_decoder_test.ngc vga_decoder_test.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o vga_decoder_test_map.ncd vga_decoder_test.ngd vga_decoder_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_decoder_test_map.ncd vga_decoder_test.ncd vga_decoder_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vga_decoder_test.twx vga_decoder_test.ncd -o vga_decoder_test.twr vga_decoder_test.pcf 
+xst -intstyle ise -ifn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/vga_decoder_test.xst" -ofn "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/vga_decoder_test.syr" 

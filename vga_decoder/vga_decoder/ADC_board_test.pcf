@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.49d on Thu Mar 05 15:26:23 2015
+// Written by: Map P.49d on Tue Mar 24 17:14:24 2015
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -24,13 +24,17 @@ COMP "fx2_vga_red_i<6>" LOCATE = SITE "R20" LEVEL 1;
 COMP "fx2_vga_red_i<7>" LOCATE = SITE "T22" LEVEL 1;
 COMP "fx2_vga_red_i<8>" LOCATE = SITE "P21" LEVEL 1;
 COMP "fx2_vga_red_i<9>" LOCATE = SITE "R22" LEVEL 1;
-TIMEGRP clk_200M_i = BEL "RED_ADC/adc_clock_generator.clk_count_4" BEL
-        "RED_ADC/adc_clock_generator.clk_count_3" BEL
-        "RED_ADC/adc_clock_generator.clk_count_2" BEL
-        "RED_ADC/adc_clock_generator.clk_count_1" BEL
-        "RED_ADC/adc_clock_generator.clk_count_0" BEL "RED_ADC/adc_clk" BEL
-        "RED_ADC/adc_clock_generator.clk_count_5" BEL
-        "RED_ADC/adc_clock_generator.clk_count_6" BEL "clk_200M_i_BUFGP/BUFG";
+PIN DCM_CLKGEN_inst_pins<1> = BEL "DCM_CLKGEN_inst" PINNAME CLKIN;
+TIMEGRP clk_200M_i = PIN "DCM_CLKGEN_inst_pins<1>";
+PIN ODDR2_R_clk_pins<1> = BEL "ODDR2_R_clk" PINNAME CK0;
+PIN ODDR2_R_clk_pins<2> = BEL "ODDR2_R_clk" PINNAME CK1;
+TIMEGRP clk_100M7 = BEL "R_ADC/adc_value_o_4" BEL "R_ADC/adc_value_o_3" BEL
+        "R_ADC/adc_value_o_2" BEL "R_ADC/adc_value_o_1" BEL
+        "R_ADC/adc_value_o_0" BEL "clk_100M7_BUFG" PIN "ODDR2_R_clk_pins<1>"
+        PIN "ODDR2_R_clk_pins<2>" PIN "ODDR2_R_clk_pins<1>" PIN
+        "ODDR2_R_clk_pins<2>";
 TS_clk_200M_i = PERIOD TIMEGRP "clk_200M_i" 200 MHz HIGH 50%;
+TS_clk_100M7 = PERIOD TIMEGRP "clk_100M7" TS_clk_200M_i * 0.503496503 HIGH
+        50%;
 SCHEMATIC END;
 
