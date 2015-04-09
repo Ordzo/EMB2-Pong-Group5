@@ -1,22 +1,22 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/adc_handler_tb_isim_beh.exe" -prj "C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/adc_handler_tb_beh.prj" "work.adc_handler_tb" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/adc_handler_tb_isim_beh.exe" -prj "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/adc_handler_tb_beh.prj" "work.adc_handler_tb" 
 ISim P.49d (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/ADC_AD9215_handler.vhd" into library work
-Parsing VHDL file "C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/adc_handler_tb.vhd" into library work
+Parsing VHDL file "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/ADC_AD9215_handler.vhd" into library work
+Parsing VHDL file "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/adc_handler_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 101928 KB
-Fuse CPU Usage: 467 ms
+Fuse Memory Usage: 102056 KB
+Fuse CPU Usage: 468 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling architecture behavioral of entity ADC_AD9215_handler [\ADC_AD9215_handler(200)\]
 Compiling architecture behavior of entity adc_handler_tb
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 6 VHDL Units
-Built simulation executable C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/adc_handler_tb_isim_beh.exe
-Fuse Memory Usage: 116440 KB
-Fuse CPU Usage: 670 ms
+Built simulation executable C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/adc_handler_tb_isim_beh.exe
+Fuse Memory Usage: 116568 KB
+Fuse CPU Usage: 655 ms

@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Xpro_v14\8_semester\vga_decoder\vga_decoder\ADC_board_test.ncd
-OUTFILE=C:\Xpro_v14\8_semester\vga_decoder\vga_decoder\ADC_board_test.bit
+INFILE=C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\ADC_board_test.ncd
+OUTFILE=C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\ADC_board_test.bit
 FAMILY=Spartan6
 PART=xc6slx45-3fgg484
-WORKINGDIR=C:\Xpro_v14\8_semester\vga_decoder\vga_decoder
+WORKINGDIR=C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder
 LICENSE=WebPack
 USER_INFO=210723259_0_0_756

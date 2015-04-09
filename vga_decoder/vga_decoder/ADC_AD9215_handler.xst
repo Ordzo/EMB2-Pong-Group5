@@ -1,5 +1,5 @@
-set -tmpdir "C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/xst/projnav.tmp"
-set -xsthdpdir "C:/Xpro_v14/8_semester/vga_decoder/vga_decoder/xst"
+set -tmpdir "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/xst/projnav.tmp"
+set -xsthdpdir "C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/xst"
 run -compileonly yes
 -p xc6slx45-3-fgg484
 -top ADC_AD9215_handler

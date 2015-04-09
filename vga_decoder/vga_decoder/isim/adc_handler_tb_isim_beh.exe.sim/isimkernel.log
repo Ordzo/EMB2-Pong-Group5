@@ -2,14 +2,14 @@ Command line:
    adc_handler_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  1417
+     -socket  5257
 
-Thu Mar 05 11:53:51 2015
+Tue Mar 24 15:29:34 2015
 
 
- Elaboration Time: 0.0468 sec
+ Elaboration Time: 0.062402 sec
 
- Current Memory Usage: 487.129 Meg
+ Current Memory Usage: 487.522 Meg
 
  Total Signals          : 11
  Total Nets             : 24
@@ -21,9 +21,9 @@ Thu Mar 05 11:53:51 2015
  Total Scalar Nets and Variables : 511
 Total Line Count : 21
 
- Total Simulation Time: 0.109201 sec
+ Total Simulation Time: 0.093602 sec
 
- Current Memory Usage: 487.129 Meg
+ Current Memory Usage: 487.522 Meg
 
-Thu Mar 05 15:38:02 2015
+Tue Mar 24 15:30:41 2015
 
