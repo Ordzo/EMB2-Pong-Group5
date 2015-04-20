@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\adc_handler_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/adc_handler_tb_isim_beh.wdb 
+Running: C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\vga_decoder_test_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Xpro_v14/8_semester/EMB2-Pong-Group5/vga_decoder/vga_decoder/vga_decoder_test_tb_isim_beh.wdb 
 ISim P.49d (signature 0x8ef4fb42)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,22 +10,27 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps: Error: Attribute Syntax Error : The ratio of  CLKFX_MULTIPLY / CLKFX_DIVIDE is 5.034965e-01.  It is over the value 2.517480e-01 set by attribute CLKFX_MD_MAX.
+
 Finished circuit initialization process.
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
 # restart
-ISim P.49d (signature 0x8ef4fb42)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
+# run 10.00ns
 Simulator is doing circuit initialization process.
+at 0 ps: Error: Attribute Syntax Error : The ratio of  CLKFX_MULTIPLY / CLKFX_DIVIDE is 5.034965e-01.  It is over the value 2.517480e-01 set by attribute CLKFX_MD_MAX.
+
 Finished circuit initialization process.
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 10.00ns
+# run 1.00ms

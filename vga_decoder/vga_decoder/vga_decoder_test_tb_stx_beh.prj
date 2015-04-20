@@ -1,0 +1,4 @@
+vhdl isim_temp "ADC_AD9215_handler.vhd"
+vhdl isim_temp "vga_decoder.vhd"
+vhdl isim_temp "vga_decoder_test.vhd"
+vhdl isim_temp "vga_decoder_test_tb.vhd"

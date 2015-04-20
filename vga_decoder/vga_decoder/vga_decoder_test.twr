@@ -46,14 +46,14 @@ fx2_vga_red_clk_o  |         9.485(R)|      SLOW  |         5.269(R)|      FAST 
 -------------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 
-Analysis completed Thu Mar 26 15:47:07 2015 
+Analysis completed Thu Apr 16 14:00:45 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 182 MB
+Peak Memory Usage: 181 MB
 
 
 

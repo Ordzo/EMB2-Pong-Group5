@@ -28,10 +28,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 115888 kilobytes
+Total memory usage is 115504 kilobytes
 
 Writing NGD file "vga_decoder_test.ngd" ...
-Total REAL time to NGDBUILD completion:  5 sec
+Total REAL time to NGDBUILD completion:  33 sec
 Total CPU time to NGDBUILD completion:   4 sec
 
 Writing NGDBUILD log file "vga_decoder_test.bld"...
