@@ -73,8 +73,12 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vga_decoder.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="vga_decoder.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="vga_decoder.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="vga_decoder_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="vga_decoder_test.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="vga_decoder_test.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="vga_decoder_test.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="vga_decoder_test.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="vga_decoder_test.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="vga_decoder_test.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="vga_decoder_test.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="vga_decoder_test.ngc"/>
@@ -90,6 +94,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="vga_decoder_test.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="vga_decoder_test.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="vga_decoder_test.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="vga_decoder_test.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="vga_decoder_test.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="vga_decoder_test.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="vga_decoder_test_envsettings.html"/>
@@ -105,6 +110,10 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="vga_decoder_test_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="vga_decoder_test_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="vga_decoder_test_summary.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vga_decoder_test_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="vga_decoder_test_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="vga_decoder_test_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vga_decoder_test_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="vga_decoder_test_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="vga_decoder_test_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
@@ -119,144 +128,189 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427207224" xil_pn:in_ck="-8221688858952662155" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1427207224">
+    <transform xil_pn:end_ts="1429195594" xil_pn:in_ck="-5311083608295421488" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1429195594">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="ADC_AD9215_handler.vhd"/>
+      <outfile xil_pn:name="adc_handler_tb.vhd"/>
+      <outfile xil_pn:name="vga_decoder.vhd"/>
+      <outfile xil_pn:name="vga_decoder_test.vhd"/>
+      <outfile xil_pn:name="vga_decoder_test_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1425550733" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4301616421076648144" xil_pn:start_ts="1425550733">
+    <transform xil_pn:end_ts="1429189703" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5036408923546178787" xil_pn:start_ts="1429189703">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1425550733" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4668802029425855570" xil_pn:start_ts="1425550733">
+    <transform xil_pn:end_ts="1429189703" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7314338774053165467" xil_pn:start_ts="1429189703">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427207224" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-6792060725586206210" xil_pn:start_ts="1427207224">
+    <transform xil_pn:end_ts="1429186759" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2068919085907428002" xil_pn:start_ts="1429186759">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1429195599" xil_pn:in_ck="-5311083608295421488" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1429195599">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ADC_AD9215_handler.vhd"/>
+      <outfile xil_pn:name="adc_handler_tb.vhd"/>
+      <outfile xil_pn:name="vga_decoder.vhd"/>
+      <outfile xil_pn:name="vga_decoder_test.vhd"/>
+      <outfile xil_pn:name="vga_decoder_test_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1429195609" xil_pn:in_ck="-5311083608295421488" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1076390741948866234" xil_pn:start_ts="1429195599">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="vga_decoder_test_tb_beh.prj"/>
+      <outfile xil_pn:name="vga_decoder_test_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1429195609" xil_pn:in_ck="6951695946284549848" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8952944005868300935" xil_pn:start_ts="1429195609">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
-    </transform>
-    <transform xil_pn:end_ts="1427207225" xil_pn:in_ck="-8221688858952662155" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1427207224">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1427207232" xil_pn:in_ck="-8221688858952662155" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6636260993842131392" xil_pn:start_ts="1427207225">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-    </transform>
-    <transform xil_pn:end_ts="1427207233" xil_pn:in_ck="8804084377548207785" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="9147508304695825101" xil_pn:start_ts="1427207232">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="vga_decoder_test_tb_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1425565370" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1425565370">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427380633" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6803005656318060851" xil_pn:start_ts="1427380633">
+    <transform xil_pn:end_ts="1429185139" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6803005656318060851" xil_pn:start_ts="1429185137">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427380633" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2068919085907428002" xil_pn:start_ts="1427380633">
+    <transform xil_pn:end_ts="1429185139" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2068919085907428002" xil_pn:start_ts="1429185139">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427380633" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1427380633">
+    <transform xil_pn:end_ts="1429185140" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1429185139">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427380633" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3232401081020008629" xil_pn:start_ts="1427380633">
+    <transform xil_pn:end_ts="1429185140" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3232401081020008629" xil_pn:start_ts="1429185140">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427380633" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015859450356" xil_pn:start_ts="1427380633">
+    <transform xil_pn:end_ts="1429185140" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015859450356" xil_pn:start_ts="1429185140">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427380633" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-6428773112742948052" xil_pn:start_ts="1427380633">
+    <transform xil_pn:end_ts="1429185140" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-6428773112742948052" xil_pn:start_ts="1429185140">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427381353" xil_pn:in_ck="-6226275369625943731" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1478915146526510395" xil_pn:start_ts="1427381343">
+    <transform xil_pn:end_ts="1429513916" xil_pn:in_ck="4789576097782648527" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="1478915146526510395" xil_pn:start_ts="1429513826">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="vga_decoder_test.lso"/>
+      <outfile xil_pn:name="vga_decoder_test.ngc"/>
+      <outfile xil_pn:name="vga_decoder_test.ngr"/>
+      <outfile xil_pn:name="vga_decoder_test.prj"/>
+      <outfile xil_pn:name="vga_decoder_test.stx"/>
+      <outfile xil_pn:name="vga_decoder_test.syr"/>
+      <outfile xil_pn:name="vga_decoder_test.xst"/>
+      <outfile xil_pn:name="vga_decoder_test_tb_beh.prj"/>
+      <outfile xil_pn:name="vga_decoder_test_tb_stx_beh.prj"/>
+      <outfile xil_pn:name="vga_decoder_test_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
     <transform xil_pn:end_ts="1427380643" xil_pn:in_ck="-1522855917198122643" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6399602620231182154" xil_pn:start_ts="1427380643">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1427381168" xil_pn:in_ck="-4568096191562337543" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6526091453308692653" xil_pn:start_ts="1427381158">
+    <transform xil_pn:end_ts="1429185458" xil_pn:in_ck="-4568096191562337543" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6526091453308692653" xil_pn:start_ts="1429185351">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="vga_decoder_test.bld"/>
+      <outfile xil_pn:name="vga_decoder_test.ngd"/>
+      <outfile xil_pn:name="vga_decoder_test_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1427381193" xil_pn:in_ck="1191931340361229499" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-2415728198128772097" xil_pn:start_ts="1427381168">
+    <transform xil_pn:end_ts="1429185591" xil_pn:in_ck="1191931340361229499" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-2415728198128772097" xil_pn:start_ts="1429185458">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="vga_decoder_test.pcf"/>
+      <outfile xil_pn:name="vga_decoder_test_map.map"/>
+      <outfile xil_pn:name="vga_decoder_test_map.mrp"/>
+      <outfile xil_pn:name="vga_decoder_test_map.ncd"/>
+      <outfile xil_pn:name="vga_decoder_test_map.ngm"/>
+      <outfile xil_pn:name="vga_decoder_test_map.xrpt"/>
+      <outfile xil_pn:name="vga_decoder_test_summary.xml"/>
+      <outfile xil_pn:name="vga_decoder_test_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1427381229" xil_pn:in_ck="-8253779834616272083" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1427381193">
+    <transform xil_pn:end_ts="1429185647" xil_pn:in_ck="-8253779834616272083" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-3829590541433901613" xil_pn:start_ts="1429185591">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="vga_decoder_test.ncd"/>
+      <outfile xil_pn:name="vga_decoder_test.pad"/>
+      <outfile xil_pn:name="vga_decoder_test.par"/>
+      <outfile xil_pn:name="vga_decoder_test.ptwx"/>
+      <outfile xil_pn:name="vga_decoder_test.unroutes"/>
+      <outfile xil_pn:name="vga_decoder_test.xpi"/>
+      <outfile xil_pn:name="vga_decoder_test_pad.csv"/>
+      <outfile xil_pn:name="vga_decoder_test_pad.txt"/>
+      <outfile xil_pn:name="vga_decoder_test_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1429185709" xil_pn:in_ck="8750745894234556294" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1429185647">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="vga_decoder_test.bgn"/>
+      <outfile xil_pn:name="vga_decoder_test.bit"/>
+      <outfile xil_pn:name="vga_decoder_test.drc"/>
+      <outfile xil_pn:name="vga_decoder_test.ut"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1427381229" xil_pn:in_ck="-2815195851458003789" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1427381218">
+    <transform xil_pn:end_ts="1429185647" xil_pn:in_ck="-2815195851458003789" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1429185633">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="vga_decoder_test.twr"/>
+      <outfile xil_pn:name="vga_decoder_test.twx"/>
     </transform>
   </transforms>
 

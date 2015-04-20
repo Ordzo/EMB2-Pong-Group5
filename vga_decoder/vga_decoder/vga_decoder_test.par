@@ -1,7 +1,7 @@
 Release 14.4 par P.49d (nt)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-HAL-9000::  Thu Mar 26 15:46:35 2015
+HAL-9000::  Thu Apr 16 14:00:07 2015
 
 par -w -intstyle ise -ol high -mt off vga_decoder_test_map.ncd
 vga_decoder_test.ncd vga_decoder_test.pcf 
@@ -75,34 +75,34 @@ Router effort level (-rl):    High
 WARNING:Timing:3159 - The DCM, DCM_CLKGEN_inst, has the attribute DFS_OSCILLATOR_MODE not set to PHASE_FREQ_LOCK. No phase relationship
    exists between the input clock and CLKFX or CLKFX180 outputs of this DCM. Data paths between these clock domains must be constrained
    using FROM/TO constraints.
-Starting initial Timing Analysis.  REAL time: 8 secs 
-Finished initial Timing Analysis.  REAL time: 8 secs 
+Starting initial Timing Analysis.  REAL time: 9 secs 
+Finished initial Timing Analysis.  REAL time: 9 secs 
 
 Starting Router
 
 
-Phase  1  : 28 unrouted;      REAL time: 9 secs 
+Phase  1  : 28 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 15 unrouted;      REAL time: 11 secs 
+Phase  2  : 15 unrouted;      REAL time: 13 secs 
 
-Phase  3  : 0 unrouted;      REAL time: 16 secs 
+Phase  3  : 0 unrouted;      REAL time: 18 secs 
 
-Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 21 secs 
 
 Updating file: vga_decoder_test.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 21 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 21 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 21 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 21 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 21 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
-Total REAL time to Router completion: 19 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 21 secs 
+Total REAL time to Router completion: 21 secs 
 Total CPU time to Router completion: 18 secs 
 
 Partition Implementation Status
@@ -146,8 +146,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 21 secs 
-Total CPU time to PAR completion: 19 secs 
+Total REAL time to PAR completion: 23 secs 
+Total CPU time to PAR completion: 20 secs 
 
 Peak Memory Usage:  266 MB
 

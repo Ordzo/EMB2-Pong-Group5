@@ -1,0 +1,30 @@
+Command line:
+   vga_decoder_test_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  3835
+
+Mon Apr 20 09:13:12 2015
+
+
+ Elaboration Time: 0.062401 sec
+
+ Current Memory Usage: 487.465 Meg
+
+ Total Signals          : 336
+ Total Nets             : 453
+ Total Signal Drivers   : 153
+ Total Blocks           : 20
+ Total Primitive Blocks : 11
+ Total Processes        : 98
+ Total Traceable Variables  : 182
+ Total Scalar Nets and Variables : 5248
+Total Line Count : 635
+Total Line Count : 635
+
+ Total Simulation Time: 8.26805 sec
+
+ Current Memory Usage: 488.514 Meg
+
+Mon Apr 20 09:15:58 2015
+

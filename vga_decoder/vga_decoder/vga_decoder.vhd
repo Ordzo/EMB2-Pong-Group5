@@ -85,6 +85,28 @@ architecture Behavioral of vga_decoder is
 -- #        |-10-|    |-33-|
 -- #             |-02-|    |--Display:480-|
 -- ########################################
+	CONSTANT p_front_porch : INTEGER := 8;
+	CONSTANT p_h_sync      : INTEGER := 96;
+	CONSTANT p_back_porch  : INTEGER := 40;
+	CONSTANT p_left_border : INTEGER := 8;
+	CONSTANT p_right_border: INTEGER := 8;
+	CONSTANT p_video       : INTEGER := 640;
+	CONSTANT p_total        : INTEGER := p_front_porch + p_h_sync + p_back_porch + p_left_border + p_right_border + p_video;
+	
+	CONSTANT l_front_porch : INTEGER := 2;
+	CONSTANT l_v_sync      : INTEGER := 2;
+	CONSTANT l_back_porch  : INTEGER := 25;
+	CONSTANT l_top_border  : INTEGER := 8;
+	CONSTANT l_bot_border  : INTEGER := 8;
+	CONSTANT l_video       : INTEGER := 480;
+	CONSTANT l_total       : INTEGER := l_front_porch + l_v_sync + l_back_porch + l_top_border + l_top_border + l_video;
+	
+-- # adc pipeline delay : 5
+-- # adc freq           : 100.7 MHz
+-- # pixel freq         : 25.175 MHz
+-- # delay sync         : (pixel_freq*pipe_delay )/adc_freq = 1.25
+-- #                      ceil(1.25) = 2;  
+	CONSTANT adc_pipe_delay_sync : INTEGER := 2;
 
     COMPONENT ADC_AD9215_handler
     PORT(
@@ -107,7 +129,7 @@ begin
 	 -- ADC modules:
     R_ADC: ADC_AD9215_handler 
 		PORT MAP (
-          clk_i => clk_100M7_i,           -- 1-bit  input: clock
+          clk_i => clk_100M7_i,         -- 1-bit  input: clock
           adc_value_i => r_i,           -- 10-bit input: input from adc
           adc_value_o => r_adc_value_o, -- 10-bit output: sampled adc value
 			 clk_o => r_adc_clk_o			 -- 1-bit  output: ADC clock
@@ -115,7 +137,7 @@ begin
 		
 	 G_ADC: ADC_AD9215_handler 
 		PORT MAP (
-          clk_i => clk_100M7_i,           -- 1-bit  input: clock
+          clk_i => clk_100M7_i,         -- 1-bit  input: clock
           adc_value_i => g_i,           -- 10-bit input: input from adc
           adc_value_o => g_adc_value_o, -- 10-bit output: sampled adc value
 			 clk_o => g_adc_clk_o			 -- 1-bit  output: ADC clock
@@ -123,7 +145,7 @@ begin
 		
 	 B_ADC: ADC_AD9215_handler 
 		PORT MAP (
-          clk_i => clk_100M7_i,           -- 1-bit  input: clock
+          clk_i => clk_100M7_i,         -- 1-bit  input: clock
           adc_value_i => b_i,           -- 10-bit input: input from adc
           adc_value_o => b_adc_value_o, -- 10-bit output: sampled adc value
 			 clk_o => b_adc_clk_o			 -- 1-bit  output: ADC clock
@@ -166,10 +188,10 @@ begin
 	 END PROCESS;
 	 
 	 --output_pixel_position
-	 h_pixel_pos_o <= std_logic_vector(horizontal_count - (48+2)) when (horizontal_count - (48+2)) < 640 else 
-	                  std_logic_vector(to_unsigned(639,h_pixel_pos_o'length)); --Output in the range 0-639
-	 v_pixel_pos_o <= std_logic_vector(vertical_count - 33) when (vertical_count - 33) < 480 else 
-	                  std_logic_vector(to_unsigned(479,v_pixel_pos_o'length)); --Output in the range 0-479
+	 h_pixel_pos_o <= std_logic_vector(to_unsigned(0,h_pixel_pos_o'length)) when horizontal_count < adc_pipe_delay_sync else
+							std_logic_vector(horizontal_count - adc_pipe_delay_sync);
+							
+	 v_pixel_pos_o <= std_logic_vector(vertical_count);
 
 end Behavioral;
 

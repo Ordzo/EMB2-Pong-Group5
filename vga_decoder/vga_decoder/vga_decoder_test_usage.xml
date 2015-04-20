@@ -4,24 +4,299 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="1">
-<DesignStatistics TimeStamp="Thu Mar 26 15:46:31 2015"><group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="1">
-<attrib name="value" value="4"/></item>
-<item name="AGG_IO" rev="1">
-<attrib name="value" value="4"/></item>
-<item name="NUM_BONDED_IOB" rev="1">
-<attrib name="value" value="4"/></item>
-<item name="NUM_BUFG" rev="1">
+<DeviceUsageSummary rev="3">
+<DesignStatistics TimeStamp="Thu Apr 16 14:01:13 2015"><group name="NetStatistics">
+<item name="NumNets_Active" rev="3">
+<attrib name="value" value="10"/></item>
+<item name="NumNets_Gnd" rev="3">
 <attrib name="value" value="1"/></item>
-<item name="NUM_DCM_CLKGEN" rev="1">
+<item name="NumNets_Vcc" rev="3">
 <attrib name="value" value="1"/></item>
-<item name="NUM_IOB_FF" rev="1">
+<item name="NumNodesOfType_Active_BUFGOUT" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_BUFHINP2OUT" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_CLKPIN" rev="3">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Active_CLKPINFEED" rev="3">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Active_DOUBLE" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_GENERIC" rev="3">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Active_GLOBAL" rev="3">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Active_INPUT" rev="3">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_IOBIN2OUT" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="3">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_OUTBOUND" rev="3">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_OUTPUT" rev="3">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_PADINPUT" rev="3">
 <attrib name="value" value="3"/></item>
-<item name="NUM_OLOGIC2" rev="1">
+<item name="NumNodesOfType_Active_PADOUTPUT" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_PINBOUNCE" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_PINFEED" rev="3">
+<attrib name="value" value="12"/></item>
+<item name="NumNodesOfType_Active_PINFEED1" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_PINFEED2" rev="3">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Active_QUAD" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_SINGLE" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_CLKPIN" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_CNTRLPIN" rev="3">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Gnd_DOUBLE" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_HGNDOUT" rev="3">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Gnd_IOBINPUT" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Gnd_OUTBOUND" rev="3">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Gnd_OUTPUT" rev="3">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Gnd_PINFEED" rev="3">
+<attrib name="value" value="9"/></item>
+<item name="NumNodesOfType_Gnd_SINGLE" rev="3">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Vcc_CNTRLPIN" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Vcc_IOBIN2OUT" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Vcc_KVCCOUT" rev="3">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Vcc_PINFEED" rev="3">
+<attrib name="value" value="6"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="2">
+<attrib name="value" value="4"/></item>
+<item name="AGG_IO" rev="2">
+<attrib name="value" value="4"/></item>
+<item name="NUM_BONDED_IOB" rev="2">
+<attrib name="value" value="4"/></item>
+<item name="NUM_BUFG" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="NUM_DCM_CLKGEN" rev="2">
+<attrib name="value" value="1"/></item>
+<item name="NUM_IOB_FF" rev="2">
+<attrib name="value" value="3"/></item>
+<item name="NUM_OLOGIC2" rev="2">
 <attrib name="value" value="3"/></item>
 </group>
+<group name="SiteStatistics">
+<item name="BUFG-BUFGMUX" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="DCM_CLKGEN-DCM" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="IOB-IOBM" rev="3">
+<attrib name="value" value="2"/></item>
+<item name="IOB-IOBS" rev="3">
+<attrib name="value" value="2"/></item>
+</group>
 </DesignStatistics>
+<DeviceUsage TimeStamp="Thu Apr 16 14:01:13 2015"><group name="SiteSummary">
+<item name="BUFG" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFG_BUFG" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="DCM_CLKGEN" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="DCM_CLKGEN_DCM_CLKGEN" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IOB" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="4"/></item>
+<item name="IOB_IMUX" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IOB_INBUF" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IOB_OUTBUF" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
+<item name="OLOGIC2" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
+<item name="OLOGIC2_OUTFF" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="3"/></item>
+<item name="PAD" rev="3">
+<attrib name="total" value="1000000"/><attrib name="used" value="4"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Thu Apr 16 14:01:13 2015"><group name="DCM_CLKGEN_DCM_CLKGEN">
+<item name="CLKFXDV_DIVIDE" rev="3">
+<attrib name="4" value="1"/></item>
+<item name="DFS_BANDWIDTH" rev="3">
+<attrib name="OPTIMIZED" value="1"/></item>
+<item name="PROGCLK" rev="3">
+<attrib name="PROGCLK_INV" value="0"/><attrib name="PROGCLK" value="1"/></item>
+<item name="PROGDATA" rev="3">
+<attrib name="PROGDATA" value="1"/><attrib name="PROGDATA_INV" value="0"/></item>
+<item name="PROGEN" rev="3">
+<attrib name="PROGEN" value="1"/><attrib name="PROGEN_INV" value="0"/></item>
+<item name="PROG_MD_BANDWIDTH" rev="3">
+<attrib name="OPTIMIZED" value="1"/></item>
+<item name="RST" rev="3">
+<attrib name="RST" value="1"/><attrib name="RST_INV" value="0"/></item>
+<item name="SPREAD_SPECTRUM" rev="3">
+<attrib name="NONE" value="1"/></item>
+<item name="STARTUP_WAIT" rev="3">
+<attrib name="FALSE" value="1"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="DRIVEATTRBOX" rev="3">
+<attrib name="12" value="3"/></item>
+<item name="SLEW" rev="3">
+<attrib name="SLOW" value="3"/></item>
+<item name="SUSPEND" rev="3">
+<attrib name="3STATE" value="3"/></item>
+</group>
+<group name="DCM_CLKGEN">
+<item name="PROGCLK" rev="3">
+<attrib name="PROGCLK_INV" value="0"/><attrib name="PROGCLK" value="1"/></item>
+<item name="PROGDATA" rev="3">
+<attrib name="PROGDATA" value="1"/><attrib name="PROGDATA_INV" value="0"/></item>
+<item name="PROGEN" rev="3">
+<attrib name="PROGEN" value="1"/><attrib name="PROGEN_INV" value="0"/></item>
+<item name="RST" rev="3">
+<attrib name="RST" value="1"/><attrib name="RST_INV" value="0"/></item>
+</group>
+<group name="OLOGIC2">
+<item name="CLK0" rev="3">
+<attrib name="CLK0_INV" value="0"/><attrib name="CLK0" value="3"/></item>
+<item name="CLK1" rev="3">
+<attrib name="CLK1" value="0"/><attrib name="CLK1_INV" value="3"/></item>
+</group>
+<group name="OLOGIC2_OUTFF">
+<item name="CK0" rev="3">
+<attrib name="CK0_INV" value="0"/><attrib name="CK0" value="3"/></item>
+<item name="CK1" rev="3">
+<attrib name="CK1_INV" value="3"/><attrib name="CK1" value="0"/></item>
+<item name="DDR_ALIGNMENT" rev="3">
+<attrib name="NONE" value="3"/></item>
+<item name="OUTFFTYPE" rev="3">
+<attrib name="DDR" value="3"/></item>
+<item name="SRINIT_OQ" rev="3">
+<attrib name="0" value="3"/></item>
+<item name="SRTYPE_OQ" rev="3">
+<attrib name="SYNC" value="3"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Thu Apr 16 14:01:13 2015"><group name="DCM_CLKGEN_DCM_CLKGEN">
+<item name="CLKFX" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="CLKIN" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="FREEZEDCM" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="PROGCLK" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="PROGDATA" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="PROGEN" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="RST" rev="3">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="OUT" rev="3">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="DCM_CLKGEN">
+<item name="CLKFX" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="CLKIN" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="FREEZEDCM" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="PROGCLK" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="PROGDATA" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="PROGEN" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="RST" rev="3">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="BUFG_BUFG">
+<item name="I0" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="O" rev="3">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="PAD">
+<item name="PAD" rev="3">
+<attrib name="value" value="4"/></item>
+</group>
+<group name="IOB_INBUF">
+<item name="OUT" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="PAD" rev="3">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="OLOGIC2">
+<item name="CLK0" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="CLK1" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="D1" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="D2" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="OCE" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="OQ" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="SR" rev="3">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="IOB_IMUX">
+<item name="I" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="3">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB">
+<item name="I" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="O" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="PAD" rev="3">
+<attrib name="value" value="4"/></item>
+</group>
+<group name="OLOGIC2_OUTFF">
+<item name="CE" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="CK0" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="CK1" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="D1" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="D2" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="Q" rev="3">
+<attrib name="value" value="3"/></item>
+<item name="SR" rev="3">
+<attrib name="value" value="3"/></item>
+</group>
+<group name="BUFG">
+<item name="I0" rev="3">
+<attrib name="value" value="1"/></item>
+<item name="O" rev="3">
+<attrib name="value" value="1"/></item>
+</group>
+</ReportPinData>
 <CmdHistory>
 </CmdHistory>
 </DeviceUsageSummary>

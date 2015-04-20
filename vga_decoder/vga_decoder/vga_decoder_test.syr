@@ -3,14 +3,14 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.25 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.27 secs
  
 --> Reading design: vga_decoder_test.prj
 
@@ -108,7 +108,7 @@ Slice Utilization Ratio Delta      : 5
 Parsing VHDL file "C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\ADC_AD9215_handler.vhd" into library work
 Parsing entity <ADC_AD9215_handler>.
 Parsing architecture <Behavioral> of entity <adc_ad9215_handler>.
-WARNING:HDLCompiler:946 - "C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\ADC_AD9215_handler.vhd" Line 77: Actual for formal port c1 is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\ADC_AD9215_handler.vhd" Line 78: Actual for formal port c1 is neither a static name nor a globally static expression
 Parsing VHDL file "C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\vga_decoder.vhd" into library work
 Parsing entity <vga_decoder>.
 Parsing architecture <Behavioral> of entity <vga_decoder>.
@@ -152,11 +152,13 @@ Synthesizing Unit <vga_decoder>.
     Found 10-bit register for signal <r_o>.
     Found 10-bit adder for signal <horizontal_count[9]_GND_6_o_add_0_OUT> created at line 1241.
     Found 10-bit adder for signal <vertical_count[9]_GND_6_o_add_1_OUT> created at line 1241.
-    Found 10-bit subtractor for signal <h_pixel_pos_o> created at line 39.
-    Found 10-bit subtractor for signal <v_pixel_pos_o> created at line 40.
+    Found 10-bit subtractor for signal <GND_6_o_GND_6_o_sub_12_OUT<9:0>> created at line 1308.
+    Found 10-bit comparator greater for signal <horizontal_count[9]_GND_6_o_LessThan_11_o> created at line 191
     Summary:
-	inferred   4 Adder/Subtractor(s).
+	inferred   3 Adder/Subtractor(s).
 	inferred  52 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
 Unit <vga_decoder> synthesized.
 
 Synthesizing Unit <ADC_AD9215_handler>.
@@ -171,12 +173,16 @@ Unit <ADC_AD9215_handler> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
+# Adders/Subtractors                                   : 3
  10-bit adder                                          : 2
- 10-bit subtractor                                     : 2
+ 10-bit subtractor                                     : 1
 # Registers                                            : 10
  1-bit register                                        : 2
  10-bit register                                       : 8
+# Comparators                                          : 1
+ 10-bit comparator greater                             : 1
+# Multiplexers                                         : 1
+ 10-bit 2-to-1 multiplexer                             : 1
 
 =========================================================================
 
@@ -194,12 +200,16 @@ Unit <vga_decoder> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
- 10-bit subtractor                                     : 2
+# Adders/Subtractors                                   : 1
+ 10-bit subtractor                                     : 1
 # Counters                                             : 2
  10-bit up counter                                     : 2
 # Registers                                            : 62
  Flip-Flops                                            : 62
+# Comparators                                          : 1
+ 10-bit comparator greater                             : 1
+# Multiplexers                                         : 1
+ 10-bit 2-to-1 multiplexer                             : 1
 
 =========================================================================
 
@@ -262,8 +272,8 @@ WARNING:Xst:2677 - Node <Decoder_module/g_o_3> of sequential type is unconnected
 WARNING:Xst:2677 - Node <Decoder_module/g_o_2> of sequential type is unconnected in block <vga_decoder_test>.
 WARNING:Xst:2677 - Node <Decoder_module/g_o_1> of sequential type is unconnected in block <vga_decoder_test>.
 WARNING:Xst:2677 - Node <Decoder_module/g_o_0> of sequential type is unconnected in block <vga_decoder_test>.
-WARNING:Xst:2677 - Node <Decoder_module/sample_pixels.pre_vs_i> of sequential type is unconnected in block <vga_decoder_test>.
 WARNING:Xst:2677 - Node <Decoder_module/sample_pixels.pre_hs_i> of sequential type is unconnected in block <vga_decoder_test>.
+WARNING:Xst:2677 - Node <Decoder_module/sample_pixels.pre_vs_i> of sequential type is unconnected in block <vga_decoder_test>.
 WARNING:Xst:2677 - Node <Decoder_module/B_ADC/adc_value_o_9> of sequential type is unconnected in block <vga_decoder_test>.
 WARNING:Xst:2677 - Node <Decoder_module/B_ADC/adc_value_o_8> of sequential type is unconnected in block <vga_decoder_test>.
 WARNING:Xst:2677 - Node <Decoder_module/B_ADC/adc_value_o_7> of sequential type is unconnected in block <vga_decoder_test>.
@@ -432,12 +442,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.63 secs
+Total REAL time to Xst completion: 47.00 secs
+Total CPU time to Xst completion: 47.88 secs
  
 --> 
 
-Total memory usage is 198620 kilobytes
+Total memory usage is 229980 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   83 (   0 filtered)

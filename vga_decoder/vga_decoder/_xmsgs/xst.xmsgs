@@ -8,5 +8,266 @@
 <msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\ADC_AD9215_handler.vhd" Line 78: Actual for formal port <arg fmt="%s" index="1">c1</arg> is neither a static name nor a globally static expression
 </msg>
 
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\vga_decoder_test.vhd</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">r_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Decoder_module</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\vga_decoder_test.vhd</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">g_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Decoder_module</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\vga_decoder_test.vhd</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">b_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Decoder_module</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\vga_decoder_test.vhd</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">h_pixel_pos_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Decoder_module</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Xpro_v14\8_semester\EMB2-Pong-Group5\vga_decoder\vga_decoder\vga_decoder_test.vhd</arg>&quot; line <arg fmt="%s" index="2">73</arg>: Output port &lt;<arg fmt="%s" index="3">v_pixel_pos_o</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">Decoder_module</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/horizontal_count_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/horizontal_count_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/horizontal_count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/horizontal_count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/horizontal_count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/horizontal_count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/horizontal_count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/horizontal_count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/horizontal_count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/horizontal_count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/vertical_count_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/vertical_count_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/vertical_count_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/vertical_count_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/vertical_count_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/vertical_count_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/vertical_count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/vertical_count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/vertical_count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/vertical_count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/r_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/r_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/r_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/r_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/r_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/r_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/r_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/r_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/r_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/r_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/b_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/b_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/b_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/b_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/b_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/b_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/b_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/b_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/b_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/b_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/g_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/g_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/g_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/g_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/g_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/g_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/g_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/g_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/g_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/g_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/sample_pixels.pre_hs_i</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/sample_pixels.pre_vs_i</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/B_ADC/adc_value_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/B_ADC/adc_value_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/B_ADC/adc_value_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/B_ADC/adc_value_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/B_ADC/adc_value_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/B_ADC/adc_value_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/B_ADC/adc_value_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/B_ADC/adc_value_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/B_ADC/adc_value_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/B_ADC/adc_value_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/G_ADC/adc_value_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/G_ADC/adc_value_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/G_ADC/adc_value_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/G_ADC/adc_value_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/G_ADC/adc_value_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/G_ADC/adc_value_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/G_ADC/adc_value_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/G_ADC/adc_value_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/G_ADC/adc_value_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/G_ADC/adc_value_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/R_ADC/adc_value_o_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/R_ADC/adc_value_o_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/R_ADC/adc_value_o_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/R_ADC/adc_value_o_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/R_ADC/adc_value_o_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/R_ADC/adc_value_o_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/R_ADC/adc_value_o_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/R_ADC/adc_value_o_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/R_ADC/adc_value_o_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Decoder_module/R_ADC/adc_value_o_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">vga_decoder_test</arg>&gt;.
+</msg>
+
 </messages>
 

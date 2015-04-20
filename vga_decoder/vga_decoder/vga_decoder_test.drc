@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Thu Apr 16 14:01:02 2015
+
+drc -z vga_decoder_test.ncd vga_decoder_test.pcf
+
+DRC detected 0 errors and 0 warnings.
